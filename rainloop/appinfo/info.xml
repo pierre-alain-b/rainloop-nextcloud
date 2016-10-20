@@ -16,6 +16,8 @@
 				<nextcloud min-version="10"/>
     </dependencies>
 	<category>social</category>
+  <category>tools</category>
+  <screenshot>https://raw.githubusercontent.com/pierre-alain-b/rainloop-nextcloud/master/screenshots/2016.10.20-screenshot.jpg</screenshot>
 	<website>http://www.rainloop.net/</website>
 	<bugs>https://github.com/RainLoop/rainloop-webmail/issues</bugs>
 </info>
