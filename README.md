@@ -26,7 +26,7 @@ Enjoy!
 
 ## How to activate Rainloop logging and find logs
 
-You canctivate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/configs/application.ini`
+You can activate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/configs/application.ini`
 ```
 [logs]
 enable = On
