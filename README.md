@@ -23,3 +23,12 @@ This is it, you are now free to configure Rainloop as you wish. One important po
 ![Image4](https://github.com/pierre-alain-b/rainloop-nextcloud/blob/master/screenshots/help_a4.png)
 
 Enjoy!
+
+## How to activate Rainloop logging and find logs
+
+You can activate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/configs/application.ini`
+```
+[logs]
+enable = On
+```
+And then logs are then available in `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/logs/`
