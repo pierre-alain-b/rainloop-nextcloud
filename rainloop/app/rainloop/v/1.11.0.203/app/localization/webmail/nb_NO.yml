@@ -149,7 +149,7 @@ nb_NO:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP-signert melding (trykk for å bekrefte)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP-kryptert melding (trykk for å dekryptere)"
     LINK_DOWNLOAD_AS_ZIP: "Last ned som zip-fil"
-    LINK_SAVE_TO_OWNCLOUD: "Lage i Owncloud"
+    LINK_SAVE_TO_OWNCLOUD: "Lage i Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Lagre i Dropbox"
   READ_RECEIPT:
     SUBJECT: "Lesebekreftelse (meldinga er lest) - %SUBJECT%"

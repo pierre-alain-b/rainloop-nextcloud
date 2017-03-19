@@ -149,7 +149,7 @@ fi_FI:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP allekirjoitettu viesti (klikkaa verifioidaksesi)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP salattu visti (klikkaa avataksesi salaus)"
     LINK_DOWNLOAD_AS_ZIP: "Lataa zip-tiedostona"
-    LINK_SAVE_TO_OWNCLOUD: "Tallenna ownCloudiin"
+    LINK_SAVE_TO_OWNCLOUD: "Tallenna Nextcloudiin"
     LINK_SAVE_TO_DROPBOX: "Tallenna Dropboxiin"
   READ_RECEIPT:
     SUBJECT: "Kuitattu luetuksi - %SUBJECT%"

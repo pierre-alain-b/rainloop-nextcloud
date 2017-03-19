@@ -147,7 +147,7 @@ uk_UA:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP підписане повідомлення (натисніть, щоб підтвердити)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP шифроване повідомлення (натисніть, щоб розшифрувати)"
     LINK_DOWNLOAD_AS_ZIP: "Завантажити як zip"
-    LINK_SAVE_TO_OWNCLOUD: "Зберегти в ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Зберегти в Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Зберегти в Dropbox"
   READ_RECEIPT:
     SUBJECT: "Сповіщення про прочитання цього повідомлення - %SUBJECT%"

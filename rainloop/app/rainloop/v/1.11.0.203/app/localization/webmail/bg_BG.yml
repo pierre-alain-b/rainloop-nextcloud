@@ -149,7 +149,7 @@ bg_BG:
     PGP_SIGNED_MESSAGE_DESC: "Подписано с OpenPGP (кликни за проверка)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Шифровано с OpenPGP (кликни за проверка)"
     LINK_DOWNLOAD_AS_ZIP: "Свали като ZIP файл"
-    LINK_SAVE_TO_OWNCLOUD: "Запази в ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Запази в Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Запази в Dropbox"
   READ_RECEIPT:
     SUBJECT: "Обратна разписка (видяно) - %SUBJECT%"

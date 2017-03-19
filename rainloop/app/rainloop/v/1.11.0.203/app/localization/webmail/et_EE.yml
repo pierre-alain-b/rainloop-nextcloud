@@ -148,7 +148,7 @@ et_EE:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP abil signeeritud kiri (kliki verifitseerimiseks)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP abil krüpteeritud kiri (kliki dekrüpteerimiseks)"
     LINK_DOWNLOAD_AS_ZIP: "Laadi alla .zip failina"
-    LINK_SAVE_TO_OWNCLOUD: "Salvesta ownCloudi"
+    LINK_SAVE_TO_OWNCLOUD: "Salvesta Nextcloudi"
     LINK_SAVE_TO_DROPBOX: "Salvesta Dropboxi"
   READ_RECEIPT:
     SUBJECT: "Kohaletoimetamise kinnitus - %SUBJECT%"

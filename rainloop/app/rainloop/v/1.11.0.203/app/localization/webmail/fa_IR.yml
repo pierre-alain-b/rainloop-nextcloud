@@ -149,7 +149,7 @@ fa_IR:
     PGP_SIGNED_MESSAGE_DESC: "پیام توسط  OpenPGP امضاء شد (برای بررسی کلیک کنید)"
     PGP_ENCRYPTED_MESSAGE_DESC: "پیام توسط  OpenPGP رمزنگاری شد (برای خارج شدن از حالت رمز کلیک کنید)"
     LINK_DOWNLOAD_AS_ZIP: "دریافت با پسوند zip"
-    LINK_SAVE_TO_OWNCLOUD: "ذخیره در OwnCloud"
+    LINK_SAVE_TO_OWNCLOUD: "ذخیره در Nextcloud"
     LINK_SAVE_TO_DROPBOX: "ذخیره در Dropbox"
   READ_RECEIPT:
     SUBJECT: "برگرداندن گیرنده (نمایش داده شد) - %SUBJECT%"

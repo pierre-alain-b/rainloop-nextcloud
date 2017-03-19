@@ -148,7 +148,7 @@ cs_CZ:
     PGP_SIGNED_MESSAGE_DESC: "Zpráva podepsaná OpenPGP (klikněte pro ověření)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Zpráva šifrovaná OpenPGP (klikněte pro dešifraci)"
     LINK_DOWNLOAD_AS_ZIP: "Stáhnout jako zip"
-    LINK_SAVE_TO_OWNCLOUD: "Uložit do ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Uložit do Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Uložit do Dropbox"
   READ_RECEIPT:
     SUBJECT: "Potvrzení o zobrazení zprávy - %SUBJECT%"

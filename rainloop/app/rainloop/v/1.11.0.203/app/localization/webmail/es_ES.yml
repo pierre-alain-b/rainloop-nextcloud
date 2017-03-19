@@ -149,7 +149,7 @@ es_ES:
     PGP_SIGNED_MESSAGE_DESC: "Mensaje firmado mediante OpenPGP  (click para verificar)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Mensaje cifrado mediante OpenPGP (click para desencriptar)"
     LINK_DOWNLOAD_AS_ZIP: "Descargar todo (archivo ZIP)"
-    LINK_SAVE_TO_OWNCLOUD: "Guardar en ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Guardar en Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Guardar en Dropbox"
   READ_RECEIPT:
     SUBJECT: "Acuse de recibo (se visualiza) - %SUBJECT%"

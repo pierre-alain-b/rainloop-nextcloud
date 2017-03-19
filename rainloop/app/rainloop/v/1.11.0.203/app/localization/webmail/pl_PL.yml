@@ -149,7 +149,7 @@ pl_PL:
     PGP_SIGNED_MESSAGE_DESC: "Podpisana"
     PGP_ENCRYPTED_MESSAGE_DESC: "Zaszyfrowana"
     LINK_DOWNLOAD_AS_ZIP: "Pobierz jako plik zip"
-    LINK_SAVE_TO_OWNCLOUD: "Zapisz w ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Zapisz w Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Zapisz w Dropbox-ie"
   READ_RECEIPT:
     SUBJECT: "Potwierdzenie wyświetlenia wiadomości o tytule: %SUBJECT%"

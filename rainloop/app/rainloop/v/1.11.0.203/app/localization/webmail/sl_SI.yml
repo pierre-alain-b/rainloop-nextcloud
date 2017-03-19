@@ -148,7 +148,7 @@ sl_SI:
     PGP_SIGNED_MESSAGE_DESC: "Sporočilo, podpisano z OpenPGP  (kliknite za overovitev)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Sporočilo, šifrirano z OpenPGP (kliknite za dešifriranje)"
     LINK_DOWNLOAD_AS_ZIP: "Prenesi kot .zip datoteko"
-    LINK_SAVE_TO_OWNCLOUD: "Shrani na ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Shrani na Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Shrani na Dropbox"
   READ_RECEIPT:
     SUBJECT: "Povratno poročilo (prikazano) - %SUBJECT%"

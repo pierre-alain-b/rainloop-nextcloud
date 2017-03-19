@@ -149,7 +149,7 @@ ja_JP:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP 署名済みメッセージ (クリックして検証)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP 暗号化メッセージ (クリックして復号化)"
     LINK_DOWNLOAD_AS_ZIP: "Zip としてダウンロード"
-    LINK_SAVE_TO_OWNCLOUD: "ownCloud へ保存"
+    LINK_SAVE_TO_OWNCLOUD: "Nextcloud へ保存"
     LINK_SAVE_TO_DROPBOX: "Dropbox へ保存"
   READ_RECEIPT:
     SUBJECT: "開封確認メッセージ - %SUBJECT%"

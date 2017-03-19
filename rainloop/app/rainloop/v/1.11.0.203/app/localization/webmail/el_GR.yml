@@ -144,7 +144,7 @@ el_GR:
     PGP_SIGNED_MESSAGE_DESC: "Μήνυμα υπογεγραμμένο με OpenPGP (κάντε κλικ για έλεγχο)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Μήνυμα κωδικοποιημένο με OpenPGP (κάντε κλίκ για αποκωδικοποίηση)"
     LINK_DOWNLOAD_AS_ZIP: "Μεταφόρτωση σαν zip"
-    LINK_SAVE_TO_OWNCLOUD: "Αποθήκευση στο ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Αποθήκευση στο Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Αποθήκευση στο Dropbox"
   READ_RECEIPT:
     SUBJECT: "Αποδεικτικό Ανάγνωσης (παρουσιάστηκε) - %SUBJECT%"
