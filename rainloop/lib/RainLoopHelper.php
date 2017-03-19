@@ -162,16 +162,17 @@ class OC_RainLoop_Helper
 			function __get_custom_data_full_path()
 			{
 				$sData = __DIR__.'/../../data/';
+				$ocData = "";
 				if (class_exists('OC_Config'))
 				{
-					$sData = rtrim(trim(OC_Config::getValue('datadirectory', '')), '\\/').'/';
+					$ocData = rtrim(trim(OC_Config::getValue('datadirectory', '')), '\\/').'/';
 				}
 				else if (class_exists('OC'))
 				{
-					$sData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
+					$ocData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
 				}
 
-				return @is_dir($sData) ? $sData.'rainloop-storage' : '';
+				return @is_dir($ocData) ? $ocData.'rainloop-storage' : $sData.'rainloop-storage'; #Reverting to standard defined path if OC config returns a non existing path for data folder
 			}
 		}
 	}
