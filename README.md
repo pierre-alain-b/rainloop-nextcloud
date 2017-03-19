@@ -3,7 +3,7 @@
 rainloop-nextcloud is a plugin for Nextcloud to use the excellent Rainloop webmail (http://www.rainloop.net/).
 
 
-## How to install
+## How to install
 
 Start within Nextcloud, and click on the "+ Apps" button in the upper-left corner dropdown menu:
 
@@ -27,7 +27,7 @@ This is it, you are now free to configure Rainloop as you wish. One important po
 Enjoy!
 
 
-## How to activate Rainloop logging and find logs
+## How to activate Rainloop logging and find logs
 
 You can activate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/configs/application.ini`
 ```
