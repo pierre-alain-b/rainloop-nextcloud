@@ -5,7 +5,7 @@ OCP\User::checkLoggedIn();
 // code copied from nextcloud /lib/private/legacy/response.php
 // fixes object-src: 'none' which blocks chrome from preview pdf
 $policy = 'default-src \'self\'; '
-           . 'script-src \'self\' \'unsafe-eval\' \'nonce-'.\OC::$server->get
+           . 'script-src \'self\' \'unsafe-eval\' \'nonce-'.\OC::$server->getContentSecurityPolicyNonceManager()->getNonce().'\'; '
            . 'style-src \'self\' \'unsafe-inline\'; '
            . 'frame-src *; '
            . 'img-src * data: blob:; '
