@@ -1,12 +1,11 @@
 <?php
 
 /**
- * ownCloud - RainLoop mail plugin
+ * nextcloud - RainLoop mail plugin
  *
- * @author RainLoop Team
- * @copyright 2016 RainLoop Team
+ * @author RainLoop Team & PAB
+ * @copyright 2017 RainLoop Team & PAB
  *
- * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
 OCP\User::checkLoggedIn();
