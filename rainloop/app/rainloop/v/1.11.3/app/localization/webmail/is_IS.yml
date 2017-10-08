@@ -149,7 +149,7 @@ is_IS:
     PGP_SIGNED_MESSAGE_DESC: "Skeyti undirritað með OpenPGP (smelltu til að sannvotta)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Skeyti dulritað með OpenPGP (smelltu til að afkóða)"
     LINK_DOWNLOAD_AS_ZIP: "Sækja sem .zip skrá"
-    LINK_SAVE_TO_OWNCLOUD: "Vista í ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Vista í Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Vista í Dropbox"
   READ_RECEIPT:
     SUBJECT: "Móttökukvittun (birt) - %SUBJECT%"

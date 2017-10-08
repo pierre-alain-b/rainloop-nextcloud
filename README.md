@@ -40,7 +40,7 @@ Rainloop user settings include management of contacts, of email accounts, of fol
 ## How to auto-connect to Rainloop?
 
 ### Auto-connection for all Nextcloud users
-If your Nextcloud users base is synchronized with an email system, then it is possible that Nextcloud credentials could be used right away to access the centralized email system. In the Rainloop admin settings, the Nextcloud administrator can then tick the "Automatically login with ownCloud/Nextcloud user credentials" checkbox.
+If your Nextcloud users base is synchronized with an email system, then it is possible that Nextcloud credentials could be used right away to access the centralized email system. In the Rainloop admin settings, the Nextcloud administrator can then tick the "Automatically login with Nextcloud/Nextcloud user credentials" checkbox.
 
 Beware, if you tick this box, all Nextcloud users will *not* be able to use the override it with the setting below.
 

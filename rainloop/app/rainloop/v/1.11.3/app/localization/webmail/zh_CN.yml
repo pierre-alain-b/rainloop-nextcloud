@@ -149,7 +149,7 @@ zh_CN:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP signed message (click to verify)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP encrypted message (click to decrypt)"
     LINK_DOWNLOAD_AS_ZIP: "下载为zip压缩包"
-    LINK_SAVE_TO_OWNCLOUD: "保存到ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "保存到Nextcloud"
     LINK_SAVE_TO_DROPBOX: "保存到Dropbox"
   READ_RECEIPT:
     SUBJECT: "妥投回执 - %SUBJECT%"

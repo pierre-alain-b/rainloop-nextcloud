@@ -150,7 +150,7 @@ hu_HU:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP aláírt üzenet (kattints az ellenőrzéshez)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP kódolt üzenet (kattints a visszafejtéshez)"
     LINK_DOWNLOAD_AS_ZIP: "Letöltés zip fájlként"
-    LINK_SAVE_TO_OWNCLOUD: "Mentés ownCloud-ra"
+    LINK_SAVE_TO_OWNCLOUD: "Mentés Nextcloud-ra"
     LINK_SAVE_TO_DROPBOX: "Mentés Dropbox-ra"
   READ_RECEIPT:
     SUBJECT: "Visszaigazolás (megjelenítve) - %SUBJECT%"

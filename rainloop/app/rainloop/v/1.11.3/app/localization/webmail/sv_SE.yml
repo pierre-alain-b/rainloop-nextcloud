@@ -150,7 +150,7 @@ sv_SE:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP-signerat meddelande (klicka för att verifiera)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP-krypterat meddelande (klicka för att dekryptera)"
     LINK_DOWNLOAD_AS_ZIP: "Ladda ner som ZIP-fil"
-    LINK_SAVE_TO_OWNCLOUD: "Spara till ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Spara till Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Spara i Dropbox"
   READ_RECEIPT:
     SUBJECT: "Mottagar kvitto (visad) - %SUBJECT%"

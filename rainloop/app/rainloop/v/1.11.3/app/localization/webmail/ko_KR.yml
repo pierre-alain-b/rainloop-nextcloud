@@ -149,7 +149,7 @@ ko_KR:
     PGP_SIGNED_MESSAGE_DESC: "암호화로 서명된 메세지입니다.  (클릭하여 확인하십시오)"
     PGP_ENCRYPTED_MESSAGE_DESC: "암호화로 서명된 메세지입니다. (클릭하여 복호화 합니다)"
     LINK_DOWNLOAD_AS_ZIP: "압축파일로 다운로드"
-    LINK_SAVE_TO_OWNCLOUD: "ownCloud에 저장하기"
+    LINK_SAVE_TO_OWNCLOUD: "Nextcloud에 저장하기"
     LINK_SAVE_TO_DROPBOX: "Dropbox에 저장하기"
   READ_RECEIPT:
     SUBJECT: "Return Receipt (displayed) - %SUBJECT%"

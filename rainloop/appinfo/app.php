@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ownCloud - RainLoop mail plugin
+ * Nextcloud - RainLoop mail plugin
  *
  * @author RainLoop Team
  * @copyright 2016 RainLoop Team
@@ -31,4 +31,3 @@ OCP\App::addNavigationEntry(array(
 	'icon' => OCP\Util::imagePath('rainloop', 'mail.png'),
 	'name' => 'Email'
 ));
-

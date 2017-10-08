@@ -144,7 +144,7 @@ ar_SA:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP signed message (click to verify)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP encrypted message (click to decrypt)"
     LINK_DOWNLOAD_AS_ZIP: "zip تنزيل كـ"
-    LINK_SAVE_TO_OWNCLOUD: "ownCloud الحفظ الى"
+    LINK_SAVE_TO_OWNCLOUD: "Nextcloud الحفظ الى"
     LINK_SAVE_TO_DROPBOX: "Dropbox الحفظ الى"
   READ_RECEIPT:
     SUBJECT: "إعلام بالقراءة (تم عرضها) - %SUBJECT%"

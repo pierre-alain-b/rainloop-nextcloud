@@ -150,7 +150,7 @@ ru_RU:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP подписанное сообщение (нажмите, чтобы подтвердить)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP шифрованное сообщение (нажмите, чтобы расшифровать)"
     LINK_DOWNLOAD_AS_ZIP: "Сохранить как zip"
-    LINK_SAVE_TO_OWNCLOUD: "Сохранить в ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Сохранить в Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Сохранить в Dropbox"
   READ_RECEIPT:
     SUBJECT: "Уведомление о прочтении письма - %SUBJECT%"

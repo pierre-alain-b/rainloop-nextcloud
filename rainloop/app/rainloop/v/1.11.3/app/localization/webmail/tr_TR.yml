@@ -149,7 +149,7 @@ tr_TR:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP imzalı mesaj (onay için tıklayın)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP şifreli mesaj (çözmek için tıklayın)"
     LINK_DOWNLOAD_AS_ZIP: "Download as zip"
-    LINK_SAVE_TO_OWNCLOUD: "Save to ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Save to Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Dropbox'a Kaydet"
   READ_RECEIPT:
     SUBJECT: "Return Receipt (displayed) - %SUBJECT%"

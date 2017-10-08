@@ -17,7 +17,7 @@
 			<p>
 				<input type="checkbox" id="rainloop-autologin" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
 				<label for="rainloop-autologin">
-					<?php p($l->t('Automatically login with ownCloud user credentials')); ?>
+					<?php p($l->t('Automatically login with Nextcloud user credentials')); ?>
 				</label>
 				<br />
 				<br />

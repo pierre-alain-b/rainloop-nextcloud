@@ -144,7 +144,7 @@ pt_PT:
     PGP_SIGNED_MESSAGE_DESC: "Mensagem assinada com OpenPGP (clique para verificar)"
     PGP_ENCRYPTED_MESSAGE_DESC: "Mensagem encriptada com OpenPGP (clique para desencriptar)"
     LINK_DOWNLOAD_AS_ZIP: "Transferir em arquivo zip"
-    LINK_SAVE_TO_OWNCLOUD: "Guardar no ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Guardar no Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Guardar no Dropbox"
   READ_RECEIPT:
     SUBJECT: "Recibo de leitura (apresentado) - %SUBJECT%"

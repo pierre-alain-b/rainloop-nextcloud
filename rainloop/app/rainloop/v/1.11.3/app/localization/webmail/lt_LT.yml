@@ -150,7 +150,7 @@ lt_LT:
     PGP_SIGNED_MESSAGE_DESC: "OpenPGP pasirašytas pranešimas (spustelkite patikrinimui)"
     PGP_ENCRYPTED_MESSAGE_DESC: "OpenPGP šifruotas pranešimas (spustelkite iššifravimui)"
     LINK_DOWNLOAD_AS_ZIP: "Atsisiųsti zip archyvą"
-    LINK_SAVE_TO_OWNCLOUD: "Išsaugoti į ownCloud"
+    LINK_SAVE_TO_OWNCLOUD: "Išsaugoti į Nextcloud"
     LINK_SAVE_TO_DROPBOX: "Išsaugoti į Dropbox"
   READ_RECEIPT:
     SUBJECT: "Pristatymo patvirtinimas (laiškas parodytas) - %SUBJECT%"
