@@ -24,7 +24,7 @@ OCP\Util::connectHook('OC_User', 'logout', 'OC_RainLoop_Helper', 'logout');
 
 OCP\Util::addScript('rainloop', 'rainloop');
 
-OCP\App::addNavigationEntry(array(
+\OC::$server->getNavigationManager()->add(array(
 	'id' => 'rainloop_index',
 	'order' => 10,
 	'href' => OCP\Util::linkToRoute('rainloop_index'),

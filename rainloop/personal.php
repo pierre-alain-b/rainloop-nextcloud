@@ -10,7 +10,6 @@
  */
 
 OCP\User::checkLoggedIn();
-OCP\App::checkAppEnabled('rainloop');
 
 OCP\Util::addScript('rainloop', 'personal');
 
