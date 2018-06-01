@@ -31,7 +31,7 @@ if (@file_exists(__DIR__.'/app/index.php'))
 
 		if (OCP\Config::getAppValue('rainloop', 'rainloop-autologin', false))
 		{
-			$sEmail = $sUser;
+			$sEmail = OCP\Config::getUserValue($sUser, 'settings', 'email');
 			$sEncodedPassword = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else
@@ -40,7 +40,7 @@ if (@file_exists(__DIR__.'/app/index.php'))
 			$sEncodedPassword = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 		}
 
-		$sDecodedPassword = OC_RainLoop_Helper::decodePassword($sEncodedPassword, md5($sEmail));
+		$sDecodedPassword = OC_RainLoop_Helper::decodePassword($sEncodedPassword, md5($sUser));
 
 		$_ENV['___rainloop_owncloud_email'] = $sEmail;
 		$_ENV['___rainloop_owncloud_password'] = $sDecodedPassword;
