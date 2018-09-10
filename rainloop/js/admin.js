@@ -1,9 +1,8 @@
 
 /**
- * Nextcloud - RainLoop mail plugin
+ * ownCloud - RainLoop mail plugin
  *
  * @author RainLoop Team
- * @copyright 2016 RainLoop Team
  *
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */

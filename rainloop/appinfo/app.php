@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Nextcloud - RainLoop mail plugin
+ * ownCloud - RainLoop mail plugin
  *
  * @author RainLoop Team
- * @copyright 2016 RainLoop Team
  *
  * https://github.com/RainLoop/owncloud
  */
@@ -24,10 +23,11 @@ OCP\Util::connectHook('OC_User', 'logout', 'OC_RainLoop_Helper', 'logout');
 
 OCP\Util::addScript('rainloop', 'rainloop');
 
-\OC::$server->getNavigationManager()->add(array(
+OCP\App::addNavigationEntry(array(
 	'id' => 'rainloop_index',
 	'order' => 10,
 	'href' => OCP\Util::linkToRoute('rainloop_index'),
 	'icon' => OCP\Util::imagePath('rainloop', 'mail.png'),
 	'name' => 'Email'
 ));
+
