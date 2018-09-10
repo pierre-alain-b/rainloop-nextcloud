@@ -1,20 +1,25 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?>	<?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
 	<id>rainloop</id>
 	<name>RainLoop</name>
 	<summary>RainLoop Webmail</summary>
-	<description>Simple, modern and fast web-based email client.</description>
+	<description>Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.12.1 (2018-09-10).</description>
 	<version>5.1.1</version>
 	<licence>AGPLv3</licence>
-	<author>RainLoop Team</author>
+	<author>RainLoop Team and Nextgen-Networks (based on initial work for Netcloud of Pierre-Alain Bandinelli)</author>
 	<require>6.0</require>
 	<ocsid>165254</ocsid>
 	<dependencies>
-		<php min-version="5.4" />
+        <php min-version="5.4" />
 		<owncloud min-version="6" max-version="9.2" />
-		<nextcloud min-version="8" max-version="11" />
-	</dependencies>
-	<category>tools</category>
-	<website>https://www.rainloop.net/</website>
-	<bugs>https://github.com/RainLoop/rainloop-webmail/issues</bugs>
+		<nextcloud min-version="10" max-version="14" />
+    	</dependencies>
+	<documentation>		<category>tools</category>
+	  <user>https://github.com/nextgen-networks/rainloop-nextcloud/blob/master/README.md</user>		<website>https://www.rainloop.net/</website>
+	</documentation>		<bugs>https://github.com/RainLoop/rainloop-webmail/issues</bugs>
+	<category>social</category>	
+  	<category>tools</category>	
+  	<screenshot>https://raw.githubusercontent.com/nextgen-networks/rainloop-nextcloud/master/screenshots/2016.10.20-screenshot.jpg</screenshot>	
+	<website>https://github.com/nextgen-networks/rainloop-nextcloud</website>	
+	<bugs>https://github.com/nextgen-networks/rainloop-nextcloud/issues</bugs>	
 </info>
