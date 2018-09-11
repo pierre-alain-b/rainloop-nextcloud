@@ -2,6 +2,20 @@
 
 OCP\User::checkLoggedIn();
 
+// code copied from nextcloud /lib/private/legacy/response.php
+// fixes object-src: 'none' which blocks chrome from preview pdf
+$policy = 'default-src \'self\'; '
+           . 'script-src \'self\' \'unsafe-eval\' \'nonce-'.\OC::$server->getContentSecurityPolicyNonceManager()->getNonce().'\'; '
+           . 'style-src \'self\' \'unsafe-inline\'; '
+           . 'frame-src *; '
+           . 'img-src * data: blob:; '
+           . 'font-src \'self\' data:; '
+           . 'media-src *; '
+           . 'connect-src *; '
+           . 'object-src \'self\'; '
+           . 'base-uri \'self\'; ';
+header('Content-Security-Policy:' . $policy);
+
 if (@file_exists(__DIR__.'/app/index.php'))
 {
 	include_once OC_App::getAppPath('rainloop').'/lib/RainLoopHelper.php';
