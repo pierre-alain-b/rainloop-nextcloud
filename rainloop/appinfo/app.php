@@ -31,3 +31,10 @@ OCP\App::addNavigationEntry(array(
 	'name' => 'Email'
 ));
 
+\OC::$server->getNavigationManager()->add(array(
+	'id' => 'rainloop_index',
+	'order' => 10,
+	'href' => OCP\Util::linkToRoute('rainloop_index'),
+	'icon' => OCP\Util::imagePath('rainloop', 'mail.png'),
+	'name' => 'Email'
+));
