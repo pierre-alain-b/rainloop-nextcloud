@@ -10,7 +10,6 @@
 
 OCP\User::checkLoggedIn();
 OCP\App::checkAppEnabled('rainloop');
-OCP\App::setActiveNavigationEntry('rainloop_index');
 \OC::$server->getNavigationManager()->setActiveEntry('rainloop_index');
 
 // Load the empty file ../css/style.css, that's needed to allow theming of

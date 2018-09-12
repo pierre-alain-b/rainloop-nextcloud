@@ -23,14 +23,6 @@ OCP\Util::connectHook('OC_User', 'logout', 'OC_RainLoop_Helper', 'logout');
 
 OCP\Util::addScript('rainloop', 'rainloop');
 
-OCP\App::addNavigationEntry(array(
-	'id' => 'rainloop_index',
-	'order' => 10,
-	'href' => OCP\Util::linkToRoute('rainloop_index'),
-	'icon' => OCP\Util::imagePath('rainloop', 'mail.png'),
-	'name' => 'Email'
-));
-
 \OC::$server->getNavigationManager()->add(array(
 	'id' => 'rainloop_index',
 	'order' => 10,
