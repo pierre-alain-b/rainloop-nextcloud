@@ -8,9 +8,9 @@
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
-OCP\JSON::checkLoggedIn();
-OCP\JSON::checkAppEnabled('rainloop');
-OCP\JSON::callCheck();
+\OC_JSON::checkLoggedIn();
+\OC_JSON::checkAppEnabled('rainloop');
+\OC_JSON::callCheck();
 
 $sEmail = '';
 $sLogin = '';
@@ -42,5 +42,5 @@ else
 }
 
 sleep(1);
-OCP\JSON::success(array('Message' => 'Saved successfully', 'Email' => $sEmail));
+\OC_JSON::success(array('Message' => 'Saved successfully', 'Email' => $sEmail));
 return true;
