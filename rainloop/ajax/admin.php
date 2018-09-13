@@ -8,9 +8,9 @@
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
-OCP\JSON::checkAdminUser();
-OCP\JSON::checkAppEnabled('rainloop');
-OCP\JSON::callCheck();
+\OC_JSON::checkAdminUser();
+\OC_JSON::checkAppEnabled('rainloop');
+\OC_JSON::callCheck();
 
 $sUrl = '';
 $sPath = '';
@@ -31,5 +31,5 @@ else
 }
 
 sleep(1);
-OCP\JSON::success(array('Message' => 'Saved successfully'));
+\OC_JSON::success(array('Message' => 'Saved successfully'));
 return true;
