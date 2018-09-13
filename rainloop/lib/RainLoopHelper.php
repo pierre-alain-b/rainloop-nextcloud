@@ -9,7 +9,7 @@ class OC_RainLoop_Helper
 	{
 		if (class_exists('\\OCP\\Util'))
 		{
-			return OCP\Util::linkToRoute('rainloop_app');
+			return OC::$server->getURLGenerator()->linkToRoute('rainloop_app');
 		}
 
 		$sRequestUri = empty($_SERVER['REQUEST_URI']) ? '': trim($_SERVER['REQUEST_URI']);
