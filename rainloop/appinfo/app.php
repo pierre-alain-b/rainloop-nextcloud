@@ -26,7 +26,7 @@ OCP\Util::addScript('rainloop', 'rainloop');
 \OC::$server->getNavigationManager()->add(array(
 	'id' => 'rainloop_index',
 	'order' => 10,
-	'href' => OCP\Util::linkToRoute('rainloop_index'),
-	'icon' => OCP\Util::imagePath('rainloop', 'mail.png'),
+	'href' => OC::$server->getURLGenerator()->linkToRoute('rainloop_index'),
+	'icon' => OC::$server->getURLGenerator()->imagePath('rainloop', 'mail.png'),
 	'name' => 'Email'
 ));
