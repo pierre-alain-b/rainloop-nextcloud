@@ -1,15 +1,46 @@
 <?php
 
-class OC_RainLoop_Helper
-{
+namespace OCA\RainLoop\Util;
+
+use OCP\App\IAppManager;
+use OCP\IConfig;
+use OCP\IUserSession;
+
+class RainLoopHelper {
+
+	private $appManager;
+	private $config;
+	private $userSession;
+
+	public function __construct(IConfig $config, IUserSession $userSession, IAppManager $appManager) {
+		$this->appManager = $appManager;
+		$this->config = $config;
+		$this->userSession = $userSession;
+	}
+
+	public function registerHooks() {
+		$this->userSession->listen('\OC\User', 'postLogin', function($user, $password) {
+			$this->login($user, $password, $this->config);
+		});
+
+		$this->userSession->listen('\OC\User', 'logout', function() {
+			$this->logout($this->appManager, $this->config, $this->userSession);
+		});
+
+		$this->userSession->listen('\OC\User', 'postSetPassword', function($user, $password) {
+			$this->changePassword($user, $password, $this->config);
+		});
+	}
+
 	/**
 	 * @return string
 	 */
 	public static function getAppUrl()
 	{
-		if (class_exists('\\OCP\\Util'))
+		$sRequestUri = \OC::$server->getURLGenerator()->linkToRoute('rainloop.page.appGet');
+		if ($sRequestUri)
 		{
-			return OCP\Util::linkToRoute('rainloop_app');
+			return $sRequestUri;
 		}
 
 		$sRequestUri = empty($_SERVER['REQUEST_URI']) ? '': trim($_SERVER['REQUEST_URI']);
@@ -182,65 +213,46 @@ class OC_RainLoop_Helper
 	 *
 	 * @return boolean
 	 */
-	public static function login($aParams)
+	public static function login($user, $password, $config)
 	{
-		if (isset($aParams['uid'], $aParams['password']))
-		{
-			$sUser = $aParams['uid'];
+		$sUser = $user->getUID();
 
-			$sEmail = $sUser;
-			$sPassword = $aParams['password'];
+		$sEmail = $sUser;
+		$sPassword = $password;
+		$sEncodedPassword = self::encodePassword($sPassword, md5($sEmail));
 
-			return OCP\Config::setUserValue($sUser, 'rainloop', 'rainloop-autologin-password',
-				self::encodePassword($sPassword, md5($sEmail)));
-		}
-
-		return false;
+		return $config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password', $sEncodedPassword);
 	}
 
-	public static function logout()
+	public static function logout($appManager, $config, $userSession)
 	{
-		OCP\Config::setUserValue(
-			OCP\User::getUser(), 'rainloop', 'rainloop-autologin-password', '');
+		$sUser = $userSession->getUser()->getUID();
+		$config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 
-		$sApiPath = __DIR__.'/../app/index.php';
-		if (file_exists($sApiPath))
-		{
-			self::regRainLoopDataFunction();
+		$sApiPath = $appManager->getAppPath('rainloop') . '/app/index.php';
 
-			$_ENV['RAINLOOP_INCLUDE_AS_API'] = true;
-			include $sApiPath;
+		self::regRainLoopDataFunction();
 
-			if (class_exists('\\RainLoop\\Api'))
-			{
-				\RainLoop\Api::LogoutCurrentLogginedUser();
-			}
-		}
+		$_ENV['RAINLOOP_INCLUDE_AS_API'] = true;
+		include $sApiPath;
+
+		\RainLoop\Api::LogoutCurrentLogginedUser();
 
 		return true;
 	}
 
-	public static function changePassword($aParams)
+	public static function changePassword($user, $password, $config)
 	{
-		if (isset($aParams['uid'], $aParams['password']))
-		{
-			$sUser = $aParams['uid'];
+			$sUser = $user->getUID();
+			$sPassword = $password;
 
-			$sEmail = $sUser;
-			$sPassword = $aParams['password'];
+			$config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password',
+				self::encodePassword($sPassword, md5($sUser)));
 
-			OCP\Util::writeLog('rainloop', 'rainloop|login: Setting new RainLoop password for '.$sEmail, OCP\Util::DEBUG);
-
-			OCP\Config::setUserValue($sUser, 'rainloop', 'rainloop-autologin-password',
-				self::encodePassword($sPassword, md5($sEmail)));
-
-			OCP\Config::setUserValue($sUser, 'rainloop', 'rainloop-password',
-				self::encodePassword($sPassword, md5($sEmail)));
+			$config->setUserValue($sUser, 'rainloop', 'rainloop-password',
+				self::encodePassword($sPassword, md5($sUser)));
 
 			return true;
-		}
-
-		return false;
 	}
 
 	public static function regRainLoopDataFunction()
@@ -251,16 +263,7 @@ class OC_RainLoop_Helper
 
 			function __get_custom_data_full_path()
 			{
-				$sData = __DIR__.'/../../data/';
-				if (class_exists('OC_Config'))
-				{
-					$sData = rtrim(trim(OC_Config::getValue('datadirectory', '')), '\\/').'/';
-				}
-				else if (class_exists('OC'))
-				{
-					$sData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
-				}
-
+				$sData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
 				return @is_dir($sData) ? $sData.'rainloop-storage' : '';
 			}
 		}

@@ -3035,7 +3035,7 @@ NewThemeLink IncludeCss LoadingDescriptionEsc TemplatesLink LangLink IncludeBack
 							$sSaveFolder = 'Attachments';
 						}
 
-						$oFiles = \OCP\Files::getStorage('files');
+						$oFiles = \OCP\Files\Node::getStorage('files');
 
 						if ($oFilesProvider && $oFiles && $oFilesProvider->IsActive() &&
 							\method_exists($oFiles, 'file_put_contents'))

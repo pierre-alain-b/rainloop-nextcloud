@@ -40,10 +40,6 @@ class OwnCloudSuggestions implements \RainLoop\Providers\Suggestions\ISuggestion
 
 				$aSearchResult = $cm->search($sQuery, $aParams);
 			}
-			else if (\class_exists('OCP\Contacts') && \OCP\Contacts::isEnabled())
-			{
-				$aSearchResult = \OCP\Contacts::search($sQuery, $aParams);
-			}
 			else
 			{
 				return $aResult;
