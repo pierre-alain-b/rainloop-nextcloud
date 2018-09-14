@@ -4,6 +4,11 @@ rainloop-nextcloud is a plugin for Nextcloud to use the excellent Rainloop webma
 
 This is an early BETA made by @nextgen-networks with first initial changes for Nextcloud 14. Work in progress!
 
+Thank you to all contributors to Rainloop for nextcloud:
+- Rainloop Team, who initiated it
+- Tab Fitts (@tabp0le)
+- Nextgen Networks (@nextgen-networks)
+
 ## How to Install
 
 Start within Nextcloud, and click on the "+ Apps" button in the upper-left corner dropdown menu:
