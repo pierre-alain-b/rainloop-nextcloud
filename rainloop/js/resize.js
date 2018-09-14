@@ -1,7 +1,7 @@
 $(function (window, document) {
 
 	var
-		buffer = 5,
+		buffer = 0, //was 5 but this was creating a white space of 5px at the bottom of the page
 		ifr = document.getElementById('rliframe')
 	;
 
