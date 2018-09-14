@@ -1,11 +1,11 @@
 <?php
 
 /**
- * ownCloud - RainLoop mail plugin
+ * Nextcloud - RainLoop mail plugin
  *
- * @author RainLoop Team
+ * @author RainLoop Team, Pierre-Alain Bandinelli, nextgen-networks
  *
- * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
+ * Based initially on https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
 \OC_JSON::checkLoggedIn();

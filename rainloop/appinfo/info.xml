@@ -3,10 +3,10 @@
 	<id>rainloop</id>
 	<name>RainLoop</name>
 	<summary>RainLoop Webmail</summary>
-	<description>Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.12.1 (2018-09-10).</description>
+	<description>Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.12.1 (2018-07-31).</description>
 	<version>6.0</version>
 	<licence>AGPLv3</licence>
-	<author>RainLoop Team and Nextgen-Networks (based on initial work for Netcloud of Pierre-Alain Bandinelli)</author>
+	<author>RainLoop Team, Pierre-Alain Bandinelli and Nextgen-Networks</author>
 	<require>6.0</require>
 	<ocsid>165254</ocsid>
 	<dependencies>
@@ -16,12 +16,12 @@
     	</dependencies>
 	<documentation>
 		<category>tools</category>
-		<user>https://github.com/nextgen-networks/rainloop-nextcloud/blob/master/README.md</user>
+		<user>https://github.com/pierre-alain-b/rainloop-nextcloud/blob/master/README.md</user>
 		<website>https://www.rainloop.net/</website>
 	</documentation>
 	<category>social</category>
   	<category>tools</category>
-  	<screenshot>https://raw.githubusercontent.com/nextgen-networks/rainloop-nextcloud/master/screenshots/2016.10.20-screenshot.jpg</screenshot>
-	<website>https://github.com/nextgen-networks/rainloop-nextcloud</website>
-	<bugs>https://github.com/nextgen-networks/rainloop-nextcloud/issues</bugs>
+  	<screenshot>https://raw.githubusercontent.com/pierre-alain-b/rainloop-nextcloud/master/screenshots/2016.10.20-screenshot.jpg</screenshot>
+	<website>https://github.com/pierre-alain-b/rainloop-nextcloud</website>
+	<bugs>https://github.com/pierre-alain-b/rainloop-nextcloud/issues</bugs>
 </info>

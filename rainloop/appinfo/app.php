@@ -1,11 +1,11 @@
 <?php
 
 /**
- * ownCloud - RainLoop mail plugin
+ * Nextcloud - RainLoop mail plugin
  *
- * @author RainLoop Team
+ * @author RainLoop Team, Pierre-Alain Bandinelli, nextgen-networks
  *
- * https://github.com/RainLoop/owncloud
+ * Based initially on https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
 OC::$CLASSPATH['OC_RainLoop_Helper'] = OC_App::getAppPath('rainloop') . '/lib/RainLoopHelper.php';
