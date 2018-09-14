@@ -1,9 +1,11 @@
-# Warning - looking for a new maintainer
-Unfortunately this plugin is no longer maintained because of lack of time. It will apparently cease working with Nextcloud 14 as the API evolves and some rampant security issues (not confirmed) may hinder the security of the nextcloud instance that is hosting it. If anyone is willing to take the lead for rainloop-nextcloud, he/she can fork the repository and I will hand over all materials.
-
 # rainloop-nextcloud
 
 rainloop-nextcloud is a plugin for Nextcloud to use the excellent Rainloop webmail (http://www.rainloop.net/).
+
+## Which branch for which version of Nextcloud?
+
+The nc13 branch corresponds to the working version of the plugin for Nextcloud 10 to Nextcloud 13. This is the stable version for now.
+The nc14 branch corresponds to a beta version of the plugin for Nextcloud 14, with work and testing in progress.
 
 
 ## How to Install
