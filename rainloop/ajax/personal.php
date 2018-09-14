@@ -1,17 +1,16 @@
 <?php
 
 /**
- * Nextcloud - RainLoop mail plugin
+ * ownCloud - RainLoop mail plugin
  *
  * @author RainLoop Team
- * @copyright 2016 RainLoop Team
  *
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
-OCP\JSON::checkLoggedIn();
-OCP\JSON::checkAppEnabled('rainloop');
-OCP\JSON::callCheck();
+\OC_JSON::checkLoggedIn();
+\OC_JSON::checkAppEnabled('rainloop');
+\OC_JSON::callCheck();
 
 $sEmail = '';
 $sLogin = '';
@@ -22,18 +21,18 @@ if (isset($_POST['appname'], $_POST['rainloop-password'], $_POST['rainloop-email
 
 	$sPostEmail = $_POST['rainloop-email'];
 
-	OCP\Config::setUserValue($sUser, 'rainloop', 'rainloop-email', $sPostEmail);
+	\OC::$server->getConfig()->setUserValue($sUser, 'rainloop', 'rainloop-email', $sPostEmail);
 
 	$sPass = $_POST['rainloop-password'];
 	if ('******' !== $sPass && '' !== $sPass)
 	{
 		include_once OC_App::getAppPath('rainloop').'/lib/RainLoopHelper.php';
 
-		OCP\Config::setUserValue($sUser, 'rainloop', 'rainloop-password',
+		\OC::$server->getConfig()->setUserValue($sUser, 'rainloop', 'rainloop-password',
 			OC_RainLoop_Helper::encodePassword($sPass, md5($sPostEmail)));
 	}
 
-	$sEmail = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+	$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
 }
 else
 {
@@ -43,5 +42,5 @@ else
 }
 
 sleep(1);
-OCP\JSON::success(array('Message' => 'Saved successfully', 'Email' => $sEmail));
+\OC_JSON::success(array('Message' => 'Saved successfully', 'Email' => $sEmail));
 return true;

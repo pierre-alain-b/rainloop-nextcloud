@@ -1,5 +1,5 @@
-# Warning - looking for a new maintainer
-Unfortunately this plugin is no longer maintained because of lack of time. It will apparently cease working with Nextcloud 14 as the API evolves and some rampant security issues (not confirmed) may hinder the security of the nextcloud instance that is hosting it. If anyone is willing to take the lead for rainloop-nextcloud, he/she can fork the repository and I will hand over all materials.
+# Warning - early BETA BETA!
+forked from Alain and made first initial changes for Nextcloud 13/14
 
 # rainloop-nextcloud
 

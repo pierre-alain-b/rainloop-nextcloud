@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Nextcloud - RainLoop mail plugin
+ * ownCloud - RainLoop mail plugin
  *
  * @author RainLoop Team
- * @copyright 2016 RainLoop Team
  *
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
@@ -15,5 +14,5 @@ OCP\Util::addScript('rainloop', 'admin');
 
 $oTemplate = new OCP\Template('rainloop', 'admin-local');
 $oTemplate->assign('rainloop-admin-panel-link', OC_RainLoop_Helper::getAppUrl().'?admin');
-$oTemplate->assign('rainloop-autologin', OCP\Config::getAppValue('rainloop', 'rainloop-autologin', false));
+$oTemplate->assign('rainloop-autologin', \OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false));
 return $oTemplate->fetchPage();

@@ -1,17 +1,16 @@
 <?php
 
 /**
- * Nextcloud - RainLoop mail plugin
+ * ownCloud - RainLoop mail plugin
  *
  * @author RainLoop Team
- * @copyright 2016 RainLoop Team
  *
  * https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
-OCP\JSON::checkAdminUser();
-OCP\JSON::checkAppEnabled('rainloop');
-OCP\JSON::callCheck();
+\OC_JSON::checkAdminUser();
+\OC_JSON::checkAppEnabled('rainloop');
+\OC_JSON::callCheck();
 
 $sUrl = '';
 $sPath = '';
@@ -19,10 +18,10 @@ $bAutologin = false;
 
 if (isset($_POST['appname']) &&	'rainloop' === $_POST['appname'])
 {
-	OCP\Config::setAppValue('rainloop', 'rainloop-autologin', isset($_POST['rainloop-autologin']) ?
+	\OC::$server->getConfig()->setAppValue('rainloop', 'rainloop-autologin', isset($_POST['rainloop-autologin']) ?
 		'1' === $_POST['rainloop-autologin'] : false);
 
-	$bAutologin = OCP\Config::getAppValue('rainloop', 'rainloop-autologin', false);
+	$bAutologin = \OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false);
 }
 else
 {
@@ -32,5 +31,5 @@ else
 }
 
 sleep(1);
-OCP\JSON::success(array('Message' => 'Saved successfully'));
+\OC_JSON::success(array('Message' => 'Saved successfully'));
 return true;
