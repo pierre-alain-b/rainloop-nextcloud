@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Nextcloud - RainLoop mail plugin
+ *
+ * @author RainLoop Team, Nextgen-Networks (@nextgen-networks), Tab Fitts (@tabp0le), Pierre-Alain Bandinelli (@pierre-alain-b)
+ *
+ * Based initially on https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
+ */
+
 OCP\User::checkLoggedIn();
 
 // code copied from nextcloud /lib/private/legacy/response.php
@@ -29,15 +37,15 @@ if (@file_exists(__DIR__.'/app/index.php'))
 
 		$sUser = OCP\User::getUser();
 
-		if (OCP\Config::getAppValue('rainloop', 'rainloop-autologin', false))
+		if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false))
 		{
 			$sEmail = $sUser;
-			$sEncodedPassword = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
+			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else
 		{
-			$sEmail = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-email', '');
-			$sEncodedPassword = OCP\Config::getUserValue($sUser, 'rainloop', 'rainloop-password', '');
+			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 		}
 
 		$sDecodedPassword = OC_RainLoop_Helper::decodePassword($sEncodedPassword, md5($sEmail));
