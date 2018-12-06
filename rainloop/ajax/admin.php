@@ -21,6 +21,9 @@ if (isset($_POST['appname']) &&	'rainloop' === $_POST['appname'])
 	\OC::$server->getConfig()->setAppValue('rainloop', 'rainloop-autologin', isset($_POST['rainloop-autologin']) ?
 		'1' === $_POST['rainloop-autologin'] : false);
 
+	\OC::$server->getConfig()->setAppValue('rainloop', 'rainloop-useemail', isset($_POST['rainloop-useemail']) ?
+		'1' === $_POST['rainloop-useemail'] : false);
+
 	$bAutologin = \OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false);
 }
 else

@@ -39,7 +39,15 @@ if (@file_exists(__DIR__.'/app/index.php'))
 
 		if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false))
 		{
-			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-email', '');
+			if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-useemail', false))
+			{
+				$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'settings', 'email', $sUser);
+			}
+			else
+			{
+				$sEmail = $sUser;
+			}
+
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else

@@ -29,6 +29,7 @@ class OC_RainLoop_Helper
 	public static function getSsoHash($sPath, $sEmail, $sPassword)
 	{
 		$SsoHash = '';
+
 		$sPath = rtrim(trim($sPath), '\\/').'/index.php';
 		if (file_exists($sPath))
 		{
@@ -183,22 +184,15 @@ class OC_RainLoop_Helper
 	 */
 	public static function login($aParams)
 	{
-		if (isset($aParams['uid'], $aParams['password'], $_POST['user']))
+		if (isset($aParams['uid'], $aParams['password']))
 		{
-			$sUID = $aParams['uid'];
-			$sUser = $_POST['user'];
+			$sUser = $aParams['uid'];
 
 			$sEmail = $sUser;
 			$sPassword = $aParams['password'];
 
-			$setEmail = \OC::$server->getConfig()->setUserValue($sUID, 'rainloop', 'rainloop-autologin-email',
-				$sEmail);
-
-			
-			$setPassword = \OC::$server->getConfig()->setUserValue($sUID, 'rainloop', 'rainloop-autologin-password',
-				self::encodePassword($sPassword, md5($sUID)));
-
-			return ($setEmail && $setPassword);
+			return \OC::$server->getConfig()->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password',
+				self::encodePassword($sPassword, md5($sEmail)));
 		}
 
 		return false;
@@ -206,9 +200,6 @@ class OC_RainLoop_Helper
 
 	public static function logout()
 	{
-		\OC::$server->getConfig()->setUserValue(
-			OCP\User::getUser(), 'rainloop', 'rainloop-autologin-email', '');
-		
 		\OC::$server->getConfig()->setUserValue(
 			OCP\User::getUser(), 'rainloop', 'rainloop-autologin-password', '');
 
