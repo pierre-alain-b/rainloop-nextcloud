@@ -2,7 +2,7 @@
 
 if (!defined('APP_VERSION'))
 {
-	define('APP_VERSION', '1.12.1');
+	define('APP_VERSION', '1.13.0');
 	define('APP_VERSION_TYPE', 'community');
 	define('APP_INDEX_ROOT_FILE', __FILE__);
 	define('APP_INDEX_ROOT_PATH', str_replace('\\', '/', rtrim(dirname(__FILE__), '\\/').'/'));
