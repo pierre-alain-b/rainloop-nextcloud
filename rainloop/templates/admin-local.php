@@ -15,10 +15,12 @@
 			<br />
 			<?php endif; ?>
 			<p>
-				<input type="checkbox" id="rainloop-autologin" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
-				<label for="rainloop-autologin">
-					<?php p($l->t('Automatically login with ownCloud user credentials')); ?>
-				</label>
+				<div style="display: flex;">
+					<input type="checkbox" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
+					<label style="margin: auto 5px;" for="rainloop-autologin">
+						<?php p($l->t('Automatically login with Nextcloud user credentials')); ?>
+					</label>
+				</div>
 				<br />
 				<br />
 				<input type="button" id="rainloop-save-button" name="rainloop-save-button" value="<?php p($l->t('Save')); ?>" />
