@@ -1,5 +1,5 @@
 OC.L10N.register(
-    "rainLoop",
+    "rainloop",
     {
     "RainLoop Webmail" : "RainLoop Webmail",
     "Go to RainLoop Webmail admin panel" : "Przejdź do panelu administracyjnego RainLoop Webmail",
