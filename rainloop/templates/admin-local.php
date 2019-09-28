@@ -14,9 +14,9 @@
 			</p>
 			<br />
 			<?php endif; ?>
-			<p>
+			<p>      
 				<div style="display: flex;">
-					<input type="checkbox" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
+					<input style="cursor: pointer;" type="checkbox" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin">
 						<?php p($l->t('Automatically login with Nextcloud user credentials')); ?>
 					</label>
