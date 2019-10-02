@@ -14,11 +14,23 @@
 			</p>
 			<br />
 			<?php endif; ?>
-			<p>      
+			<p>
 				<div style="display: flex;">
-					<input style="cursor: pointer;" type="checkbox" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
+					<input type="radio" id="rainloop-noautologin" name="rainloop-autologin" value="0" <?php if (!$_['rainloop-autologin']&&!$_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
+					<label style="margin: auto 5px;" for="rainloop-noautologin">
+						<?php p($l->t('Do not automatically login')); ?>
+					</label>
+				</div>
+				<div style="display: flex;">
+					<input type="radio" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin">
 						<?php p($l->t('Automatically login with Nextcloud user credentials')); ?>
+					</label>
+				</div>
+				<div style="display: flex;">
+					<input type="radio" id="rainloop-autologin-with-email" name="rainloop-autologin" value="2" <?php if ($_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
+					<label style="margin: auto 5px;" for="rainloop-autologin-with-email">
+						<?php p($l->t('Automatically login with Nextcloud user email credentials')); ?>
 					</label>
 				</div>
 				<br />

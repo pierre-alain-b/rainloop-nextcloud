@@ -36,19 +36,28 @@ if (@file_exists(__DIR__.'/app/index.php'))
 		$sEncodedPassword = '';
 
 		$sUser = OCP\User::getUser();
+    $sPasswordSalt = '';
 
 		if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false))
 		{
 			$sEmail = $sUser;
+      $sPasswordSalt = $sUser;
+			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
+		}
+		else if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin-with-email', false))
+		{
+			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'settings', 'email','');
+      $sPasswordSalt = $sUser;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else
 		{
 			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+      $sPasswordSalt = $sEmail
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 		}
 
-		$sDecodedPassword = OC_RainLoop_Helper::decodePassword($sEncodedPassword, md5($sEmail));
+		$sDecodedPassword = OC_RainLoop_Helper::decodePassword($sEncodedPassword, md5($sPasswordSalt));
 
 		$_ENV['___rainloop_owncloud_email'] = $sEmail;
 		$_ENV['___rainloop_owncloud_password'] = $sDecodedPassword;
