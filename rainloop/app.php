@@ -1,4 +1,4 @@
-<?php
+appinfo/app.php<?php
 
 /**
  * Nextcloud - RainLoop mail plugin
@@ -36,24 +36,24 @@ if (@file_exists(__DIR__.'/app/index.php'))
 		$sEncodedPassword = '';
 
 		$sUser = OCP\User::getUser();
-    $sPasswordSalt = '';
+		$sPasswordSalt = '';
 
 		if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin', false))
 		{
 			$sEmail = $sUser;
-      $sPasswordSalt = $sUser;
+			$sPasswordSalt = $sUser;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else if (\OC::$server->getConfig()->getAppValue('rainloop', 'rainloop-autologin-with-email', false))
 		{
 			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'settings', 'email','');
-      $sPasswordSalt = $sUser;
+			$sPasswordSalt = $sUser;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
 		else
 		{
 			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
-      $sPasswordSalt = $sEmail
+			$sPasswordSalt = $sEmail;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 		}
 
