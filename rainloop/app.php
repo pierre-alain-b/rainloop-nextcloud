@@ -1,4 +1,4 @@
-appinfo/app.php<?php
+<?php
 
 /**
  * Nextcloud - RainLoop mail plugin
