@@ -143,7 +143,7 @@ pl_PL:
     PRINT_LABEL_DATE: "Data"
     PRINT_LABEL_SUBJECT: "Temat"
     PRINT_LABEL_ATTACHMENTS: "Załączniki"
-    MESSAGE_LOADING: "Ładowanie wiadomości..."
+    MESSAGE_LOADING: "Ładowanie"
     MESSAGE_VIEW_DESC: "Wybierz wiadomość do wyświetlenia."
     MESSAGE_VIEW_MOVE_DESC: "Kliknij nazwę folderu w lewym panelu, aby wybrać folder docelowy."
     PGP_PASSWORD_INPUT_PLACEHOLDER: "Hasło"
