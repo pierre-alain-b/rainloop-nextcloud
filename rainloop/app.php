@@ -50,9 +50,10 @@ if (@file_exists(__DIR__.'/app/index.php'))
 			$sPasswordSalt = $sUser;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
 		}
-		else
+		$sIndividualEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+		if (!empty($sIndividualEmail))
 		{
-			$sEmail = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+			$sEmail = $sIndividualEmail;
 			$sPasswordSalt = $sEmail;
 			$sEncodedPassword = \OC::$server->getConfig()->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 		}
