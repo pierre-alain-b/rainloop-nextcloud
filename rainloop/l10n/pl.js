@@ -1,8 +1,9 @@
 OC.L10N.register(
     "rainloop",
     {
-    "Email" : " E-mail",
     "RainLoop Webmail" : "RainLoop Webmail",
+    "Email" : "E-mail",
+    "Password" : "Hasło",
     "Go to RainLoop Webmail admin panel" : "Przejdź do panelu administracyjnego RainLoop Webmail",
     "Let the user define its own email/password credentials only" : "Pozwól użytkownikowi zdefiniować tylko własne poświadczenia e-mail/hasło",
     "Automatically login with Nextcloud user credentials or user defined credentials" : "Automatycznie loguj się przy użyciu poświadczeń użytkownika Nextcloud lub poświadczeń zdefiniowanych przez użytkownika",
