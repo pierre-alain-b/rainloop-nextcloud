@@ -540,7 +540,7 @@ class Utils
 	 */
 	public static function IsOwnCloudLoggedIn()
 	{
-		return self::IsOwnCloud() && \OC::$server->getUserSession()->isLoggedIn();
+		return self::IsOwnCloud() && \class_exists('OCP\User') && \OCP\User::isLoggedIn();
 	}
 
 	/**
@@ -562,10 +562,10 @@ class Utils
 		$sAppPath = '';
 		if (\RainLoop\Utils::IsOwnCloud())
 		{
-			$sAppPath = \OC::$server->getURLGenerator()->linkToRoute('rainloop.page.appGet');
-			// TODO: Fix this ugly hack. Is there a "modern" way to return
-			// a URL that doesn't include index.php, which breaks things?
-			$sAppPath = preg_replace('index\.php\/', '', $sAppPath);
+			if (\class_exists('OC_App'))
+			{
+				$sAppPath = \rtrim(\trim(\OC_App::getAppWebPath('rainloop')), '\\/').'/app/';
+			}
 
 			if (empty($sAppPath))
 			{
