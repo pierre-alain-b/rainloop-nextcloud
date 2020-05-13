@@ -8,7 +8,10 @@
  * Based initially on https://github.com/RainLoop/rainloop-webmail/tree/master/build/owncloud
  */
 
-OCP\User::checkAdminUser();
+#OCP\User::checkAdminUser();
+if (!OC_User::isAdminUser(OC_User::getUser())) {
+	return;
+}
 
 OCP\Util::addScript('rainloop', 'admin');
 
