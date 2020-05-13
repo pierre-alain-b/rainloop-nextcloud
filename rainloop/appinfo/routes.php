@@ -1,13 +1,31 @@
 <?php
 
-$this->create('rainloop_index', '/apps/rainloop/')
-    ->actionInclude('rainloop/index.php');
-
-$this->create('rainloop_app', '/app/')
-    ->actionInclude('rainloop/app.php');
-
-$this->create('rainloop_ajax_personal', 'ajax/personal.php')
-    ->actionInclude('rainloop/ajax/personal.php');
-
-$this->create('rainloop_ajax_admin', 'ajax/admin.php')
-    ->actionInclude('rainloop/ajax/admin.php');
+return [
+	'routes' => [
+		[
+			'name' => 'page#index',
+			'url' => '/',
+			'verb' => 'GET'
+		],
+		[
+			'name' => 'page#appGet',
+			'url' => '/app/',
+			'verb' => 'GET'
+		],
+		[
+			'name' => 'page#appPost',
+			'url' => '/app/',
+			'verb' => 'POST'
+		],
+		[
+			'name' => 'ajax#setPersonal',
+			'url' => '/ajax/personal.php',
+			'verb' => 'POST'
+		],
+		[
+			'name' => 'ajax#setAdmin',
+			'url' => '/ajax/admin.php',
+			'verb' => 'POST'
+		]
+	]
+];
