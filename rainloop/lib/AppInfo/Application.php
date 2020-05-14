@@ -5,7 +5,6 @@ namespace OCA\RainLoop\AppInfo;
 use OCA\RainLoop\Util\RainLoopHelper;
 use OCA\RainLoop\Controller\AjaxController;
 use OCA\RainLoop\Controller\PageController;
-use OCA\RainLoop\Settings\PersonalSettings;
 
 use OCP\AppFramework\App;
 use OCP\IUser;
