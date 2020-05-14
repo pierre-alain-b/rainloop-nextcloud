@@ -3,7 +3,9 @@
 namespace OCA\RainLoop\AppInfo;
 
 use OCA\RainLoop\Util\RainLoopHelper;
+use OCA\RainLoop\Controller\AjaxController;
 use OCA\RainLoop\Controller\PageController;
+use OCA\RainLoop\Settings\PersonalSettings;
 
 use OCP\AppFramework\App;
 use OCP\IUser;
@@ -23,6 +25,17 @@ class Application extends App {
 		$container->registerService(
 			'PageController', function($c) {
 				return new PageController(
+					$c->query('AppName'),
+					$c->query('Request'),
+					$c->getServer()->getAppManager(),
+					$c->query('ServerContainer')->getConfig()
+				);
+			}
+		);
+
+		$container->registerService(
+			'AjaxController', function($c) {
+				return new AjaxController(
 					$c->query('AppName'),
 					$c->query('Request'),
 					$c->getServer()->getAppManager(),
@@ -61,6 +74,10 @@ class Application extends App {
 				'name' => 'Email'
 			];
 		});
+	}
+
+	public function registerPersonalSettings() {
+		\OCP\App::registerPersonal('rainloop', 'templates/personal');
 	}
 
 }

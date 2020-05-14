@@ -41,6 +41,10 @@ class PageController extends Controller {
 
 		$response = new TemplateResponse('rainloop', 'index', $params);
 
+		$csp = new ContentSecurityPolicy();
+		$csp->addAllowedFrameDomain("'self'");
+		$response->setContentSecurityPolicy($csp);
+
 		return $response;
 	}
 
