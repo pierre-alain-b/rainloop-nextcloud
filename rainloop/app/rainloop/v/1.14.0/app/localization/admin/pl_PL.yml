@@ -102,7 +102,7 @@ pl_PL:
     LABEL_ALLOW_TWO_STEP: "Zezwól na autoryzację 2-etapową"
     LABEL_FORCE_TWO_STEP: "Wymuś autoryzację 2-etapową"
     LABEL_USE_IMAGE_PROXY: "Użyj lokalnego serwera proxy dla zewnętrznych obrazów"
-    LABEL_ALLOW_OPEN_PGP: "Zezwalaj na używanie OpenPGP"
+    LABEL_ALLOW_OPEN_PGP: "Zezwól na używanie OpenPGP"
     LABEL_SHOW_PHP_INFO: "Pokaż informacje o wersji PHP"
     LEGEND_ADMIN_PANEL_ACCESS_CREDENTIALS: "Poświadczenia dostępu do panelu administracyjnego"
     LABEL_CURRENT_PASSWORD: "Bieżące hasło"
@@ -112,7 +112,7 @@ pl_PL:
     BUTTON_UPDATE_PASSWORD: "Zaktualizuj hasło"
     LEGEND_SSL: "SSL"
     LABEL_REQUIRE_VERIFICATION: "Wymagaj weryfikacji używanego certyfikatu SSL (IMAP / SMTP)"
-    LABEL_ALLOW_SELF_SIGNED: "Zezwalaj na certyfikaty z podpisem własnym"
+    LABEL_ALLOW_SELF_SIGNED: "Zezwól na certyfikaty z podpisem własnym"
   TAB_INTEGRATIONS:
     LEGEND_GOOGLE: "Google"
     LABEL_ENABLE_GOOGLE: "Włącz integrację z Google"
