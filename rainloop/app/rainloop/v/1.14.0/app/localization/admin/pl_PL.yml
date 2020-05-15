@@ -111,8 +111,8 @@ pl_PL:
     LABEL_REPEAT_PASSWORD: "Powtórz hasło"
     BUTTON_UPDATE_PASSWORD: "Zaktualizuj hasło"
     LEGEND_SSL: "SSL"
-    LABEL_REQUIRE_VERIFICATION: "Wymagaj sprawdzania poprawności certyfikatów SSL (IMAP/SMTP)"
-    LABEL_ALLOW_SELF_SIGNED: "Zezwól na używanie certyfikatów podpisanych samodzielnie"
+    LABEL_REQUIRE_VERIFICATION: "Wymagaj weryfikacji używanego certyfikatu SSL (IMAP / SMTP)"
+    LABEL_ALLOW_SELF_SIGNED: "Zezwalaj na certyfikaty z podpisem własnym"
   TAB_INTEGRATIONS:
     LEGEND_GOOGLE: "Google"
     LABEL_ENABLE_GOOGLE: "Włącz integrację z Google"
