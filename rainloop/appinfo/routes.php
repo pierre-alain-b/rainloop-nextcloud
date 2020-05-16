@@ -1,6 +1,6 @@
 <?php
 
-$this->create('rainloop_index', '/apps/rainloop/')
+$this->create('rainloop_index', '/')
     ->actionInclude('rainloop/index.php');
 
 $this->create('rainloop_app', '/app/')
