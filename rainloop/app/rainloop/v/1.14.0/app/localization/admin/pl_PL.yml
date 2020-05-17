@@ -82,7 +82,7 @@ pl_PL:
     LABEL_STORAGE_USER: "Użytkownik"
     LABEL_STORAGE_PASSWORD: "Hasło"
     BUTTON_TEST: "Testuj"
-    ALERT_NOTICE: "Powiadomienie!"
+    ALERT_NOTICE: "Ostrzeżenie!"
     HTML_ALERT_DO_NOT_USE_THIS_DATABASE: "Nie używaj tej bazy danych z dużą ilością aktywnych użytkowników."
     HTML_ALERT_DOES_NOT_SUPPORTED: |
         Twój system nie zawiera wsparcia dla obsługi kontaktów.
