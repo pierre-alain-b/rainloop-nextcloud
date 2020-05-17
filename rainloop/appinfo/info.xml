@@ -7,11 +7,6 @@
 	<version>6.1.4</version>
 	<licence>agpl</licence>
 	<author>RainLoop Team, Nextgen-Networks, Tab Fitts, Nathan Kinkade, Pierre-Alain Bandinelli</author>
-	<dependencies>
-    <php min-version="5.4" />
-		<owncloud min-version="6" max-version="9.2" />
-		<nextcloud min-version="19" max-version="19" />
-  </dependencies>
   <namespace>RainLoop</namespace>
 	<documentation>
 		<user>https://github.com/pierre-alain-b/rainloop-nextcloud/blob/master/README.md</user>
@@ -23,4 +18,12 @@
 	<website>https://github.com/pierre-alain-b/rainloop-nextcloud</website>
 	<bugs>https://github.com/pierre-alain-b/rainloop-nextcloud/issues</bugs>
 	<screenshot>https://raw.githubusercontent.com/pierre-alain-b/rainloop-nextcloud/master/screenshots/2016.10.20-screenshot.jpg</screenshot>
+	<dependencies>
+    <php min-version="5.4" />
+		<owncloud min-version="6" max-version="9.2" />
+		<nextcloud min-version="19" max-version="19" />
+  </dependencies>
+	<settings>
+		<admin>OCA\RainLoop\Settings\AdminSettings</admin>
+	</settings>
 </info>

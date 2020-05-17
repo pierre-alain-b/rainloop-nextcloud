@@ -1,3 +1,5 @@
+<?php script('rainloop', 'admin') ?>
+
 <div class="section">
 	<form id="mail-rainloop-admin-form" action="#" method="post">
 		<input type="hidden" name="requesttoken" value="<?php echo $_['requesttoken'] ?>" id="requesttoken">
