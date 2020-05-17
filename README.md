@@ -73,4 +73,4 @@ You can activate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storag
 [logs]
 enable = On
 ```
-And then logs are then available in `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/logs/`
+Logs are then available in `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/logs/`
