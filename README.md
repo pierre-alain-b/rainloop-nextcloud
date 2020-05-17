@@ -4,9 +4,11 @@ rainloop-nextcloud is a plugin for Nextcloud to use the excellent Rainloop webma
 
 ## Which branch for which version of Nextcloud?
 
-The nc13 branch corresponds to the working version of the plugin for Nextcloud 10 to Nextcloud 13.
-The nc14 branch corresponds to a beta version of the plugin for Nextcloud 14. All the changes of nc14 branch were merged into master when it was deemed suitable for production.
-The master branch corresponds to the latest stable version of the plugin.
+- The master branch corresponds to the latest stable version of the plugin that is suitable for Nextcloud 19 and upwards.
+- The 'up-to-nc18' corresponds to the working version of the plugin for Nextcloud 14 to 18.
+- The 'nc14' branch corresponds to a beta version of the plugin for Nextcloud 14. All the changes of 'nc14' branch were merged into master when it was deemed suitable for production.
+- The 'nc13' branch corresponds to the working version of the plugin for Nextcloud 10 to Nextcloud 13.
+
 
 Thank you to all contributors to Rainloop for nextcloud:
 - Rainloop Team, who initiated it
@@ -47,6 +49,10 @@ Each user of Rainloop can also change user-specific behaviors in the Rainloop us
 
 Rainloop user settings include management of contacts, of email accounts, of folders, appearance and OpenPGP.
 
+### The specificity of Rainloop user accounts
+The plugin passes the login information of the user to the Rainloop app which then creates and manages the user accounts. Accounts in Rainloop are based soley on the authenticated email accounts, and do not take into account the nextcloud user which created them in the first place. If two or more Nextcloud users have the same email account in additional settings, they will in fact share the same 'email account' in Rainloop including any additional email accounts that they may have added subsequently to their main account.
+This is to be kept in mind for the use case where multiple users shall have the same email account but may be also tempted to add additionnal acounts to their Rainloop.
+
 ## How to auto-connect to Rainloop?
 
 ### Auto-connection for all Nextcloud users
@@ -67,4 +73,4 @@ You can activate Rainloop logging here: `/path/to/nextcloud/data/rainloop-storag
 [logs]
 enable = On
 ```
-And then logs are then available in `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/logs/`
+Logs are then available in `/path/to/nextcloud/data/rainloop-storage/_data_/_default_/logs/`
