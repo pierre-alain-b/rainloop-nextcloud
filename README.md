@@ -4,10 +4,10 @@ rainloop-nextcloud is a plugin for Nextcloud to use the excellent Rainloop webma
 
 ## Which branch for which version of Nextcloud?
 
-The master branch corresponds to the latest stable version of the plugin that is suitable for Nextcloud 19 and upwards.
-The 'up-to-nc18' corresponds to the working version of the plugin for Nextcloud 14 to 18.
-The 'nc14' branch corresponds to a beta version of the plugin for Nextcloud 14. All the changes of 'nc14' branch were merged into master when it was deemed suitable for production.
-The 'nc13' branch corresponds to the working version of the plugin for Nextcloud 10 to Nextcloud 13.
+- The master branch corresponds to the latest stable version of the plugin that is suitable for Nextcloud 19 and upwards.
+- The 'up-to-nc18' corresponds to the working version of the plugin for Nextcloud 14 to 18.
+- The 'nc14' branch corresponds to a beta version of the plugin for Nextcloud 14. All the changes of 'nc14' branch were merged into master when it was deemed suitable for production.
+- The 'nc13' branch corresponds to the working version of the plugin for Nextcloud 10 to Nextcloud 13.
 
 
 Thank you to all contributors to Rainloop for nextcloud:
