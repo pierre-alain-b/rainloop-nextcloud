@@ -46,7 +46,7 @@ function RainLoopFormHelper(sID, sAjaxFile, fCallback)
 					bResult = 'success' === oData['status'];
 					if (oData['Message'])
 					{
-						oDesc.text(oData['Message']);
+						oDesc.text(t('rainloop', oData['Message']));
 					}
 				}
 
@@ -59,7 +59,7 @@ function RainLoopFormHelper(sID, sAjaxFile, fCallback)
 					oForm.addClass('rainloop-error');
 					if ('' === oDesc.text())
 					{
-						oDesc.text('Error');
+						oDesc.text(t('rainloop', 'Error'));
 					}
 				}
 
