@@ -50,7 +50,10 @@ class AjaxController extends Controller {
 			]);
 		}
 	}
-
+	
+  /**
+  * @NoAdminRequired
+  */
 	public function setPersonal(): JSONResponse {
 		try {
 
