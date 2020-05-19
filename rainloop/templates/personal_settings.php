@@ -10,9 +10,9 @@
 			<p>
 				<?php p($l->t('Enter an email and password to auto-login to RainLoop.')); ?> <b><?php p($l->t('Please note')); ?></b> <?php p($l->t('that this feature')); ?>
 				<a href="https://github.com/pierre-alain-b/rainloop-nextcloud/issues/87"
-					style="color:blue; text-decoration:underline" target="_blank"><?php p($l->t('may have some')); ?></a>
+					style="text-decoration:underline" target="_blank"><?php p($l->t('may have some')); ?></a>
 				<a href="https://github.com/RainLoop/rainloop-webmail/issues/1082"
-					style="color:blue; text-decoration:underline" target="_blank"><?php p($l->t('security considerations')); ?></a>.
+					style="text-decoration:underline" target="_blank"><?php p($l->t('security considerations')); ?></a>.
 			</p>
 			<p>
 				<input type="text" id="rainloop-email" name="rainloop-email"
