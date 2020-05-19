@@ -35,24 +35,18 @@ class AjaxController extends Controller {
 			} else {
 				return new JSONResponse([
 					'status' => 'error',
-					'data' => [
-						'message' => 'Invalid Argument(s)'
-					]
+					'Message' => 'Invalid Argument(s)'
 				]);
 			}
 
 			return new JSONResponse([
 				'status' => 'success',
-				'data' => [
-					'message' => 'Saved successfully'
-				]
+				'Message' => 'Saved successfully'
 			]);
 		} catch (Exception $e) {
 			return new JSONResponse([
 				'status' => 'error',
-				'data' => [
-					'message' => $e->getMessage()
-				]
+				'Message' => $e->getMessage()
 			]);
 		}
 	}
@@ -78,26 +72,20 @@ class AjaxController extends Controller {
 			} else {
 				return new JSONResponse([
 					'status' => 'error',
-					'data' => [
-						'message' => 'Invalid argument(s)',
-						'email' => $sEmail
-					]
+					'Message' => 'Invalid argument(s)',
+					'Email' => $sEmail
 				]);
 			}
 
 			return new JSONResponse([
 				'status' => 'success',
-				'data' => [
-					'message' => 'Saved successfully',
-					'email' => $sEmail
-				]
+				'Message' => 'Saved successfully',
+				'Email' => $sEmail
 			]);
 		} catch (Exception $e) {
 			return new JSONResponse([
 				'status' => 'error',
-				'data' => [
-					'message' => $e->getMessage()
-				]
+				'Message' => $e->getMessage()
 			]);
 		}
 	}
