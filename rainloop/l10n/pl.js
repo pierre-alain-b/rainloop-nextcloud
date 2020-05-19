@@ -2,6 +2,11 @@ OC.L10N.register(
     "rainloop",
     {
     "RainLoop Webmail" : "RainLoop Webmail",
+    "Enter an email and password to auto-login to RainLoop." : "Wpisz adres e-mail i hasło, aby automatycznie zalogować się do RainLoop.",
+    "Please note" : "Pamiętaj,",
+    "that this feature" : "że ta funkcja",
+    "may have some" : "może mieć pewne",
+    "security considerations" : "względy bezpieczeństwa",
     "Email" : "E-mail",
     "Password" : "Hasło",
     "Go to RainLoop Webmail admin panel" : "Przejdź do panelu administracyjnego RainLoop Webmail",
