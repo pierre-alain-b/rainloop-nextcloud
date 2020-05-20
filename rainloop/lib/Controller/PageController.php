@@ -66,13 +66,6 @@ class PageController extends Controller {
 
 	public function app() {
 
-		$csp = new ContentSecurityPolicy();
-		// fixes object-src: 'none' which blocks chrome from preview pdf
-		$csp->addAllowedObjectDomain("'self'");
-
-		$response = new TemplateResponse('rainloop', 'app');
-		$response->setContentSecurityPolicy($csp);
-
 		RainLoopHelper::regRainLoopDataFunction();
 
 		if (isset($_GET['OwnCloudAuth'])) {
@@ -97,7 +90,6 @@ class PageController extends Controller {
 
 		include $this->appPath . '/app/index.php';
 
-		return $response;
 	}
 
 }
