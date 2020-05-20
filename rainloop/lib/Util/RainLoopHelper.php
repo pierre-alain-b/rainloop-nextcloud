@@ -220,7 +220,11 @@ class RainLoopHelper {
 		$sPassword = $password;
 		$sEncodedPassword = self::encodePassword($sPassword, md5($sEmail));
 
-		$session['rainloop-autologin-password'] = $sEncodedPassword;
+		// Only store the user's password in the current session if they have
+		// enabled auto-login using NC credentials.
+		if ($config->getUserValue($sUser, 'rainloop', 'rainloop-autologin', '')) {
+			$session['rainloop-autologin-password'] = $sEncodedPassword;
+		}
 	}
 
 	/**
