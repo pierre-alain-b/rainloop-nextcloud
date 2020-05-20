@@ -10,18 +10,21 @@ use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
 use OCP\IRequest;
+use OCP\ISession;
 
 class PageController extends Controller {
 	private $userId;
 	private $config;
 	private $appManager;
 	private $appPath;
+	private $session;
 
-	public function __construct($AppName, IRequest $request, IAppManager $appManager, IConfig $config) {
+	public function __construct($AppName, IRequest $request, IAppManager $appManager, IConfig $config, ISession $session) {
 		parent::__construct($AppName, $request);
 		$this->appPath = $appManager->getAppPath('rainloop');
 		$this->config = $config;
 		$this->appManager = $appManager;
+		$this->session = $session;
 	}
 
 	/**
@@ -66,13 +69,6 @@ class PageController extends Controller {
 
 	public function app() {
 
-		$csp = new ContentSecurityPolicy();
-		// fixes object-src: 'none' which blocks chrome from preview pdf
-		$csp->addAllowedObjectDomain("'self'");
-
-		$response = new TemplateResponse('rainloop', 'app');
-		$response->setContentSecurityPolicy($csp);
-
 		RainLoopHelper::regRainLoopDataFunction();
 
 		if (isset($_GET['OwnCloudAuth'])) {
@@ -83,7 +79,7 @@ class PageController extends Controller {
 
 			if ($this->config->getAppValue('rainloop', 'rainloop-autologin', false)) {
 				$sEmail = $sUser;
-				$sEncodedPassword = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
+				$sEncodedPassword = $this->session['rainloop-autologin-password'];
 			} else {
 				$sEmail = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
 				$sEncodedPassword = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
@@ -97,7 +93,6 @@ class PageController extends Controller {
 
 		include $this->appPath . '/app/index.php';
 
-		return $response;
 	}
 
 }

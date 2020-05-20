@@ -27,7 +27,8 @@ class Application extends App {
 					$c->query('AppName'),
 					$c->query('Request'),
 					$c->getServer()->getAppManager(),
-					$c->query('ServerContainer')->getConfig()
+					$c->query('ServerContainer')->getConfig(),
+					$c->getServer()->getSession()
 				);
 			}
 		);
@@ -51,7 +52,8 @@ class Application extends App {
 				return new RainLoopHelper(
 					$c->getServer()->getConfig(),
 					$c->getServer()->getUserSession(),
-					$c->getServer()->getAppManager()
+					$c->getServer()->getAppManager(),
+					$c->getServer()->getSession()
 				);
 			}
 		);

@@ -4,31 +4,30 @@ namespace OCA\RainLoop\Util;
 
 use OCP\App\IAppManager;
 use OCP\IConfig;
+use OCP\ISession;
 use OCP\IUserSession;
 
 class RainLoopHelper {
 
 	private $appManager;
 	private $config;
+	private $session;
 	private $userSession;
 
-	public function __construct(IConfig $config, IUserSession $userSession, IAppManager $appManager) {
+	public function __construct(IConfig $config, IUserSession $userSession, IAppManager $appManager, ISession $session) {
 		$this->appManager = $appManager;
 		$this->config = $config;
 		$this->userSession = $userSession;
+		$this->session = $session;
 	}
 
 	public function registerHooks() {
 		$this->userSession->listen('\OC\User', 'postLogin', function($user, $password) {
-			$this->login($user, $password, $this->config);
+			$this->login($user, $password, $this->config, $this->session);
 		});
 
 		$this->userSession->listen('\OC\User', 'logout', function() {
-			$this->logout($this->appManager, $this->config, $this->userSession);
-		});
-
-		$this->userSession->listen('\OC\User', 'postSetPassword', function($user, $password) {
-			$this->changePassword($user, $password, $this->config);
+			$this->logout($this->appManager, $this->config, $this->session);
 		});
 	}
 
@@ -210,10 +209,10 @@ class RainLoopHelper {
 
 	/**
 	 * @param array $aParams
-	 *
 	 * @return boolean
+	 * @UseSession
 	 */
-	public static function login($user, $password, $config)
+	public static function login($user, $password, $config, &$session)
 	{
 		$sUser = $user->getUID();
 
@@ -221,13 +220,15 @@ class RainLoopHelper {
 		$sPassword = $password;
 		$sEncodedPassword = self::encodePassword($sPassword, md5($sEmail));
 
-		return $config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password', $sEncodedPassword);
+		$session['rainloop-autologin-password'] = $sEncodedPassword;
 	}
 
-	public static function logout($appManager, $config, $userSession)
+	/**
+	 * @UseSession
+	 */
+	public static function logout($appManager, $config, &$session)
 	{
-		$sUser = $userSession->getUser()->getUID();
-		$config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password', '');
+		$session['rainloop-autologin-password'] = '';
 
 		$sApiPath = $appManager->getAppPath('rainloop') . '/app/index.php';
 
@@ -239,20 +240,6 @@ class RainLoopHelper {
 		\RainLoop\Api::LogoutCurrentLogginedUser();
 
 		return true;
-	}
-
-	public static function changePassword($user, $password, $config)
-	{
-			$sUser = $user->getUID();
-			$sPassword = $password;
-
-			$config->setUserValue($sUser, 'rainloop', 'rainloop-autologin-password',
-				self::encodePassword($sPassword, md5($sUser)));
-
-			$config->setUserValue($sUser, 'rainloop', 'rainloop-password',
-				self::encodePassword($sPassword, md5($sUser)));
-
-			return true;
 	}
 
 	public static function regRainLoopDataFunction()
