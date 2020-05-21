@@ -24,12 +24,10 @@ function watchIFrameTitle() {
 		if (title) {
 			matches = title.match(/\(([0-9]+)\)/);
 			if (matches) {
-				unreadCount = matches[1];
-				if (unreadCount) {
-					document.title = t('rainloop', 'Email') + ' (' + unreadCount + ') - Nextcloud';
-				}
+				document.title = t('rainloop', 'Email') + ' (' + matches[1] + ') - Nextcloud'; 
+			} else {
+				document.title = t('rainloop', 'Email') + ' - Nextcloud'; 
 			}
-
 		}
 	});
 	observer.observe(target, config);
