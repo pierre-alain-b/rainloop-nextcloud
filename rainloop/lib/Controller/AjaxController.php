@@ -68,7 +68,7 @@ class AjaxController extends Controller {
 					include_once $this->appManager->getAppPath('rainloop').'/lib/Util/RainLoopHelper.php';
 
 					$this->config->setUserValue($sUser, 'rainloop', 'rainloop-password',
-                        RainLoopHelper::encodePassword($sPass, md5($sPostEmail)));
+						RainLoopHelper::encodePassword($sPass, md5($sPostEmail)));
 				}
 
 				$sEmail = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
