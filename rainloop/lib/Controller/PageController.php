@@ -79,13 +79,24 @@ class PageController extends Controller {
 
 			if ($this->config->getAppValue('rainloop', 'rainloop-autologin', false)) {
 				$sEmail = $sUser;
+				$sPasswordSalt = $sUser;
 				$sEncodedPassword = $this->session['rainloop-autologin-password'];
-			} else {
-				$sEmail = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+			} else if ($this->config->getAppValue('rainloop', 'rainloop-autologin-with-email', false)) {
+				$sEmail = $this->config->getUserValue($sUser, 'settings', 'email', '');
+				$sPasswordSalt = $sUser;
+				$sEncodedPassword = $this->session['rainloop-autologin-password'];
+			}
+
+			// If the user has set credentials for RainLoop in their personal
+			// settings, override everything before and use those instead.
+			$sIndividualEmail = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-email', '');
+			if ($sIndividualEmail) {
+				$sEmail = $sIndividualEmail;
+				$sPasswordSalt = $sEmail;
 				$sEncodedPassword = $this->config->getUserValue($sUser, 'rainloop', 'rainloop-password', '');
 			}
 
-			$sDecodedPassword = RainLoopHelper::decodePassword($sEncodedPassword, md5($sEmail));
+			$sDecodedPassword = RainLoopHelper::decodePassword($sEncodedPassword, md5($sPasswordSalt));
 
 			$_ENV['___rainloop_owncloud_email'] = $sEmail;
 			$_ENV['___rainloop_owncloud_password'] = $sDecodedPassword;
@@ -96,3 +107,4 @@ class PageController extends Controller {
 	}
 
 }
+

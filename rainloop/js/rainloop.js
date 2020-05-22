@@ -13,7 +13,11 @@ document.onreadystatechange = function () {
 // allowing the unread message count to be displayed in the NC tab's text when
 // the RainLoop app is selected.
 function watchIFrameTitle() {
-	target = document.getElementById('rliframe').contentDocument.getElementsByTagName('title')[0];
+	iframe = document.getElementById('rliframe');
+	if (!iframe) {
+		return;
+	}
+	target = iframe.contentDocument.getElementsByTagName('title')[0];
 	config = {
 		characterData: true,
 		childList: true,
@@ -24,7 +28,7 @@ function watchIFrameTitle() {
 		if (title) {
 			matches = title.match(/\(([0-9]+)\)/);
 			if (matches) {
-				document.title = t('rainloop', 'Email') + ' (' + matches[1] + ') - Nextcloud'; 
+				document.title = '('+ matches[1] + ') ' + t('rainloop', 'Email') + ' - Nextcloud'; 
 			} else {
 				document.title = t('rainloop', 'Email') + ' - Nextcloud'; 
 			}

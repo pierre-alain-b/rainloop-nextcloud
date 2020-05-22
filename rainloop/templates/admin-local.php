@@ -20,19 +20,19 @@
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-noautologin" name="rainloop-autologin" value="0" <?php if (!$_['rainloop-autologin']&&!$_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-noautologin">
-						<?php p($l->t('Let the user define its own email/password credentials only')); ?>
+						<?php p($l->t('Users will login manually, or define credentials in their personal settings for automatic logins.')); ?>
 					</label>
 				</div>
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin">
-						<?php p($l->t('Automatically login with Nextcloud user credentials or user defined credentials')); ?>
+						<?php p($l->t('Attempt to automatically login users with their NC username and password, or user-defined credentials, if set.')); ?>
 					</label>
 				</div>
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-autologin-with-email" name="rainloop-autologin" value="2" <?php if ($_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin-with-email">
-						<?php p($l->t('Automatically login with Nextcloud user email credentials or user defined credentials')); ?>
+						<?php p($l->t('Attempt to automatically login users with their NC email and password, or user-defined credentials, if set.')); ?>
 					</label>
 				</div>
 				<br />
