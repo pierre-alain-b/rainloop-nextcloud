@@ -26,13 +26,13 @@
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-autologin" name="rainloop-autologin" value="1" <?php if ($_['rainloop-autologin']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin">
-						<?php p($l->t('Attempt to automatically login users with their NC username and password, or user-defined credentials, if set.')); ?>
+						<?php p($l->t('Attempt to automatically login users with their Nextcloud username and password, or user-defined credentials, if set.')); ?>
 					</label>
 				</div>
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-autologin-with-email" name="rainloop-autologin" value="2" <?php if ($_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
 					<label style="margin: auto 5px;" for="rainloop-autologin-with-email">
-						<?php p($l->t('Attempt to automatically login users with their NC email and password, or user-defined credentials, if set.')); ?>
+						<?php p($l->t('Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set.')); ?>
 					</label>
 				</div>
 				<br />
