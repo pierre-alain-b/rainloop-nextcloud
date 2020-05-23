@@ -221,7 +221,7 @@ class RainLoopHelper {
 		$sEncodedPassword = self::encodePassword($sPassword, md5($sEmail));
 
 		// Only store the user's password in the current session if they have
-		// enabled auto-login using NC credentials.
+		// enabled auto-login using Nextcloud username or email address.
 		if ($config->getAppValue('rainloop', 'rainloop-autologin') || $config->getAppValue('rainloop', 'rainloop-autologin-with-email')) {
 			$session['rainloop-autologin-password'] = $sEncodedPassword;
 		}
