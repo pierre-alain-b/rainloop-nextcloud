@@ -222,7 +222,7 @@ class RainLoopHelper {
 
 		// Only store the user's password in the current session if they have
 		// enabled auto-login using NC credentials.
-		if ($config->getAppValue('rainloop', 'rainloop-autologin')) {
+		if ($config->getAppValue('rainloop', 'rainloop-autologin') || $config->getAppValue('rainloop', 'rainloop-autologin-with-email')) {
 			$session['rainloop-autologin-password'] = $sEncodedPassword;
 		}
 	}
