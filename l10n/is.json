@@ -1,0 +1,7 @@
+{ "translations": {
+    "Email" : "Tölvupóstur",
+    "Error" : "Villa",
+    "Save" : "Vista",
+    "Password" : "Lykilorð"
+},"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"
+}

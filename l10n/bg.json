@@ -1,0 +1,7 @@
+{ "translations": {
+    "Email" : "Имейл",
+    "Error" : "Грешка",
+    "Save" : "Запазване",
+    "Password" : "Парола"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
