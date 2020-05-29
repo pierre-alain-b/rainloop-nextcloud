@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Email" : "Sähköposti",
     "Error" : "Virhe",
+    "RainLoop" : "RainLoop",
     "Save" : "Tallenna",
     "Password" : "Salasana"
 },
