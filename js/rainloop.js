@@ -84,7 +84,14 @@ function RainLoopFormHelper(sID, sAjaxFile, fCallback)
 					bResult = 'success' === oData['status'];
 					if (oData['Message'])
 					{
-						oDesc.text(t('rainloop', oData['Message']));
+						if (bResult)
+						{
+							oDesc.text(t('rainloop', 'Saved successfully'));
+						}
+						else
+						{
+							oDesc.text(t('rainloop', 'Invalid Argument(s)'));
+						}
 					}
 				}
 
