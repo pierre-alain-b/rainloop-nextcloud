@@ -7,6 +7,7 @@ use OCA\RainLoop\Controller\AjaxController;
 use OCA\RainLoop\Controller\PageController;
 
 use OCP\AppFramework\App;
+use OCP\IL10N;
 use OCP\IUser;
 
 class Application extends App {
@@ -39,7 +40,8 @@ class Application extends App {
 					$c->query('AppName'),
 					$c->query('Request'),
 					$c->getServer()->getAppManager(),
-					$c->query('ServerContainer')->getConfig()
+					$c->query('ServerContainer')->getConfig(),
+					$c->query(IL10N::class)
 				);
 			}
 		);
