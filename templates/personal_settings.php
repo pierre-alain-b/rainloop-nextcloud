@@ -19,12 +19,12 @@ $links = [
 			</p>
 			<p>
 				<input type="text" id="rainloop-email" name="rainloop-email"
-					value="<?php echo $_['rainloop-email']; ?>" placeholder="<?php p($l->t('Email')); ?>" />
+					value="<?php echo $_['rainloop-email']; ?>" placeholder="<?php echo($l->t('Email')); ?>" />
 
 				<input type="password" id="rainloop-password" name="rainloop-password"
-					value="<?php echo $_['rainloop-password']; ?>" placeholder="<?php p($l->t('Password')); ?>" />
+					value="<?php echo $_['rainloop-password']; ?>" placeholder="<?php echo($l->t('Password')); ?>" />
 
-				<input type="button" id="rainloop-save-button" name="rainloop-save-button" value="<?php p($l->t('Save')); ?>" />
+				<input type="button" id="rainloop-save-button" name="rainloop-save-button" value="<?php echo($l->t('Save')); ?>" />
 				&nbsp;&nbsp;<span class="rainloop-result-desc"></span>
 			</p>
 		</fieldset>
