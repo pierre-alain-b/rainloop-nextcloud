@@ -8,16 +8,18 @@ use OCP\App\IAppManager;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\JSONResponse;
 use OCP\IConfig;
+use OCP\IL10N;
 use OCP\IRequest;
 
 class AjaxController extends Controller {
 	private $config;
 	private $appManager;
 
-	public function __construct(string $appName, IRequest $request, IAppManager $appManager, IConfig $config) {
+	public function __construct(string $appName, IRequest $request, IAppManager $appManager, IConfig $config, IL10N $l) {
 		parent::__construct($appName, $request);
 		$this->config = $config;
 		$this->appManager = $appManager;
+		$this->l = $l;
 	}
 
 	public function setAdmin(): JSONResponse {
@@ -35,13 +37,13 @@ class AjaxController extends Controller {
 			} else {
 				return new JSONResponse([
 					'status' => 'error',
-					'Message' => 'Invalid Argument(s)'
+					'Message' => $this->l->t('Invalid Argument(s)')
 				]);
 			}
 
 			return new JSONResponse([
 				'status' => 'success',
-				'Message' => 'Saved successfully'
+				'Message' => $this->l->t('Saved successfully')
 			]);
 		} catch (Exception $e) {
 			return new JSONResponse([
@@ -75,14 +77,14 @@ class AjaxController extends Controller {
 			} else {
 				return new JSONResponse([
 					'status' => 'error',
-					'Message' => 'Invalid argument(s)',
+					'Message' => $this->l->t('Invalid argument(s)'),
 					'Email' => $sEmail
 				]);
 			}
 
 			return new JSONResponse([
 				'status' => 'success',
-				'Message' => 'Saved successfully',
+				'Message' => $this->l->t('Saved successfully'),
 				'Email' => $sEmail
 			]);
 		} catch (Exception $e) {
