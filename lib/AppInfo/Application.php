@@ -74,7 +74,7 @@ class Application extends App {
 				'order' => 10,
 				'href' => $urlGenerator->linkToRoute('rainloop.page.index'),
 				'icon' => $urlGenerator->imagePath('rainloop', 'mail.png'),
-				'name' => 'Email'
+				'name' => \OCP\Util::getL10N('rainloop')->t('Email')
 			];
 		});
 	}
