@@ -10,9 +10,6 @@
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Tente acceder de xeito automático aos usuarios co seu correo contrasinal do Nextcloud ou as credenciais definidas polo usuario, se están definidas.",
     "Save" : "Gardar",
     "RainLoop Webmail is not configured yet." : "O Correo web RainLoop aínda non foi configurado.",
-    "Enter an email and password to auto-login to RainLoop." : "Introduza un correo electrónico e un contrasinal para o acceso automático ao RainLoop.",
-    "Please note" : "Teña en conta",
-    "that this feature" : "que esta característica",
     "may have some" : "pode que teña algunhas",
     "security considerations" : "consideracións de seguridade",
     "Password" : "Contrasinal"

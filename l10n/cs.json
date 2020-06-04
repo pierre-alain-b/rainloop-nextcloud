@@ -10,9 +10,6 @@
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Pokoušet se uživatele přihlašovat automaticky pomocí jejich e-mailů a hesel, používaných v jejich Nextcloud účtech, nebo těch uživateli zadaných (pokud jsou).",
     "Save" : "Uložit",
     "RainLoop Webmail is not configured yet." : "Webový e-mailový klient RainLoop doposud není nastavený.",
-    "Enter an email and password to auto-login to RainLoop." : "Zadejte e-mail a heslo pro automatické přihlášení do RainLoop.",
-    "Please note" : "Všimněte si",
-    "that this feature" : "že tato funkce",
     "may have some" : "může mít některé",
     "security considerations" : "co zvážit ohledně zabezpečení",
     "Password" : "Heslo"

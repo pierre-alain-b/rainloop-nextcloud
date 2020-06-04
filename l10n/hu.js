@@ -10,9 +10,6 @@ OC.L10N.register(
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "A felhasználó manuálisan lépbe, vagy automatikusan az előre meghatározott személyes azonosítójával.",
     "Save" : "Mentés",
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail még nincs beállítva.",
-    "Enter an email and password to auto-login to RainLoop." : "Adjon meg egy felhasználónevet és egy jelszót a RainLoopba való automatikus belépéshez.",
-    "Please note" : "Kérem jegyezze meg",
-    "that this feature" : "hogy ez az összetevő",
     "may have some" : "lehet hogy van",
     "security considerations" : "biztonsági megfontolások",
     "Password" : "Jelszó"

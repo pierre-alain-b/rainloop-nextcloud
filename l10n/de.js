@@ -12,9 +12,6 @@ OC.L10N.register(
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Es wird versucht Benutzer automatisch mit der E-Mail-Adresse und Passwort von Nextcloud oder, falls festgelegt, mit benutzerdefinierten Anmeldedaten anzumelden.",
     "Save" : "Speichern",
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail ist noch nicht eingerichtet.",
-    "Enter an email and password to auto-login to RainLoop." : "E-Mail-Adresse und Passwort für die automatische Anmeldung bei RainLoop eingeben.",
-    "Please note" : "Bitte beachten",
-    "that this feature" : "dass diese Funktion",
     "may have some" : "möglicherweise einige",
     "security considerations" : "Sicherheitsüberlegungen benötigt",
     "Password" : "Passwort"

@@ -12,9 +12,6 @@ OC.L10N.register(
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "לנסות להכניס משתמשים עם כתובת הדוא״ל והססמה שלהם ב־Nextcloud או באמצעות פרטי גישה שהוגדרו על ידי המשתמש, אם הוגדרו כאלה.",
     "Save" : "שמירה",
     "RainLoop Webmail is not configured yet." : "דוא״ל דפדפן RainLoop אינו מוגדר עדיין.",
-    "Enter an email and password to auto-login to RainLoop." : "נא להקליד כתובת דוא״ל וססמה כדי להיכנס אוטומטית ל־RainLoop.",
-    "Please note" : "נא לשים לב",
-    "that this feature" : "שלתכונה הזאת",
     "may have some" : "עשויים להיות",
     "security considerations" : "ענייני אבטחה",
     "Password" : "ססמה"

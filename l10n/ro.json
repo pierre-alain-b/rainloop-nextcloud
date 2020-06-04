@@ -10,9 +10,6 @@
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Încearcă să autentifici automat utilizatorii cu email-ul și parola de Nextcloud sau credențialele definite de aceștia, dacă există.",
     "Save" : "Salvează",
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail nu este configurat deocamdată.",
-    "Enter an email and password to auto-login to RainLoop." : "Introdu un email și o parolă pentru a face auto-autentificare în RainLoop.",
-    "Please note" : "Ia în considerare",
-    "that this feature" : "că această funcționalitate",
     "may have some" : "poate avea niște",
     "security considerations" : "considerații de securitate",
     "Password" : "Parolă"

@@ -12,9 +12,6 @@ OC.L10N.register(
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Kullanıcıların oturumu, Nextcloud e-posta adresi ve parolaları ile ya da ayarlanmış ise kullanıcının belirttiği kimlik doğrulama bilgileri ile otomatik olarak açılmaya çalışılır.",
     "Save" : "Kaydet",
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail henüz yapılandırılmamış.",
-    "Enter an email and password to auto-login to RainLoop." : "RainLoop oturumunun otomatik olarak açılması için bir e-posta adresi ve parola yazın.",
-    "Please note" : "Lütfen unutmayın",
-    "that this feature" : "bu özellik",
     "may have some" : "içinde bazı",
     "security considerations" : "güvenlik konuları bulunabilir",
     "Password" : "Parola"

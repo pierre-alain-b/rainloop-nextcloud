@@ -10,9 +10,6 @@
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "حاول ان تقوم بتسجيل دخول المستخدمين مع الايميل و الرمز لنيكست كلاود، او شهادة تعريف المستخدم، اذا تناسب.",
     "Save" : "حفظ",
     "RainLoop Webmail is not configured yet." : "بريد الويب رين لوب لم يتم تكوينه بعد..",
-    "Enter an email and password to auto-login to RainLoop." : "ادخل ايميل ورمز لتسجيل الدخول الآلي لرين لوب",
-    "Please note" : "رجاءاً لاحظ",
-    "that this feature" : "تلك تكون ميزة",
     "may have some" : "هل لي بعض",
     "security considerations" : "اعتبارات امنية",
     "Password" : "كلمة السر"

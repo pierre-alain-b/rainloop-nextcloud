@@ -12,9 +12,6 @@ OC.L10N.register(
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Αυτόματη σύνδεση χρηστών με την διεύθυνση Ηλ.Ταχυδρομείου και κωδικό πρόσβασης του Nextcloud ή με τα διαπιστευτήρια που καθορίζονται από τον χρήστη.",
     "Save" : "Αποθήκευση",
     "RainLoop Webmail is not configured yet." : "Το Ηλ.Ταχυδρομείο RainLoop δεν έχει ρυθμιστεί ακόμη.",
-    "Enter an email and password to auto-login to RainLoop." : "Εισάγεται διεύθυνση ηλ.ταχυδρομείου και κωδικό πρόσβασης για αυτόματη σύνδεση στο RainLoop.",
-    "Please note" : "Παρακαλούμε σημειώστε",
-    "that this feature" : "ότι αυτή η δυνατότητα",
     "may have some" : "μπορεί να έχει κάποια",
     "security considerations" : "θέματα ασφάλειας",
     "Password" : "Κωδικός πρόσβασης"
