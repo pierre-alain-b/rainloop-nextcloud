@@ -3,6 +3,9 @@ OC.L10N.register(
     {
     "Email" : "E-mail",
     "Error" : "Chyba",
+    "Invalid Argument(s)" : "Neplatný(é) argument(y)",
+    "Saved successfully" : "Úspešne uložené",
+    "Invalid argument(s)" : "Neplatný(é) argument(y)",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
     "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Jednoduchý, moderný a rýchly webový e-mailový klient. Po povolení v Nextcloud prejdite na panel správcu, „Doplnkové nastavenia“ a uvidíte sekciu „Rainloop webmail“. Tam kliknite na odkaz, aby ste prešli na administrátorský panel Rainloop. Predvolené meno používateľa/heslo je admin/12345. Táto verzia je založená na Rainloop 1.14.0 (2020-01).",
@@ -14,6 +17,7 @@ OC.L10N.register(
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail ešte nie je nastavený.",
     "may have some" : "môže mať",
     "security considerations" : "vplyv na bezpečnosť",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Zadajte e-mail a heslo pre automatické prihlásenie do RainLoop. <b>Prosím uvedomte si,</b> že táto funkcia %s %s.",
     "Password" : "Heslo"
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

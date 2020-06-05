@@ -3,6 +3,9 @@ OC.L10N.register(
     {
     "Email" : "Correo electrónico",
     "Error" : "Error",
+    "Invalid Argument(s)" : "Argumento(s) inválidos",
+    "Saved successfully" : "Guardado con éxito",
+    "Invalid argument(s)" : "Argumento(s) inválidos",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
     "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Un cliente de correo basado en web sencillo, moderno y rápido. Tras activarlo en Nexcloud, vaya al panel de administración de Nextcloud, \"Ajustes adicionales\" y verá la sección \"Rainloop webmail\". Haga clic en el enlace para ir al panel de administración de Rainloop. Los valores predeterminados para usuario/contraseña son admin/12345. Esta versión está basada en Rainloop 1.14.0 (2020-01).",
@@ -14,6 +17,7 @@ OC.L10N.register(
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail aun no está configurado",
     "may have some" : "puede tener alguna",
     "security considerations" : "consideraciones de seguridad",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Escriba un email y contraseña para auto registro en RainLoop. Por favor, observe note</b> que esta característica %s %s.",
     "Password" : "Contraseña"
 },
 "nplurals=2; plural=(n != 1);");
