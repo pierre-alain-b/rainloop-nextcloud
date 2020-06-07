@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Email" : "El. paštas",
     "Error" : "Klaida",
+    "Saved successfully" : "Sėkmingai įrašyta",
     "Save" : "Įrašyti",
     "Password" : "Slaptažodis"
 },

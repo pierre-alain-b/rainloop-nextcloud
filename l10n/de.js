@@ -4,7 +4,7 @@ OC.L10N.register(
     "Email" : "E-Mail",
     "Error" : "Fehler",
     "Invalid Argument(s)" : "Ungültige(r) Parameter",
-    "Saved successfully" : "Erfolgreich gespeichert",
+    "Saved successfully" : "Gespeichert",
     "Invalid argument(s)" : "Ungültige(r) Parameter",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
@@ -17,7 +17,7 @@ OC.L10N.register(
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail ist noch nicht eingerichtet.",
     "may have some" : "möglicherweise einige",
     "security considerations" : "Sicherheitsüberlegungen benötigt",
-    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "E-Mail-Adresse und Passwort für die automatische Anmeldung bei RainLoop eingeben. Bitte beachte<b>, dass diese Funktion %s %s.",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "E-Mail-Adresse und Passwort für die automatische Anmeldung bei RainLoop eingeben. <b>Bitte beachte</b>, dass diese Funktion %s %s.",
     "Password" : "Passwort"
 },
 "nplurals=2; plural=(n != 1);");
