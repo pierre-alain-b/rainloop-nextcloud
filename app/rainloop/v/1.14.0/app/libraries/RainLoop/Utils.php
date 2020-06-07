@@ -565,7 +565,7 @@ class Utils
 			$sAppPath = \OC::$server->getURLGenerator()->linkToRoute('rainloop.page.appGet');
 			// TODO: Fix this ugly hack. Is there a "modern" way to return
 			// a URL that doesn't include index.php, which breaks things?
-			$sAppPath = preg_replace('index\.php\/', '', $sAppPath);
+			$sAppPath = preg_replace('/index\.php\//', '', $sAppPath);
 
 			if (empty($sAppPath))
 			{
