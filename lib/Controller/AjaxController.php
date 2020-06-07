@@ -37,7 +37,7 @@ class AjaxController extends Controller {
 			} else {
 				return new JSONResponse([
 					'status' => 'error',
-					'Message' => $this->l->t('Invalid Argument(s)')
+					'Message' => $this->l->t('Invalid argument(s)')
 				]);
 			}
 
