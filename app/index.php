@@ -1,5 +1,15 @@
 <?php
 
+if (!@function_exists('__get_custom_data_full_path'))
+{
+	$_ENV['RAINLOOP_OWNCLOUD'] = true;
+	function __get_custom_data_full_path()
+	{
+		$sData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
+		return @is_dir($sData) ? $sData.'rainloop-storage' : '';
+	}
+}
+
 if (!defined('APP_VERSION'))
 {
 	define('APP_VERSION', '1.14.0');
