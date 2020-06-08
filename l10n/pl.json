@@ -1,9 +1,8 @@
 { "translations": {
     "Email" : "E-mail",
     "Error" : "Błąd",
-    "Invalid Argument(s)" : "Nieprawidłowe argumenty",
-    "Saved successfully" : "Zapisano pomyślnie",
     "Invalid argument(s)" : "Nieprawidłowe argumenty",
+    "Saved successfully" : "Zapisano pomyślnie",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
     "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Prosty, nowoczesny i szybki internetowy klient poczty e-mail. Po włączeniu w Nextcloud przejdź do panelu administracyjnego Nextcloud, „Ustawienia dodatkowe”, a zobaczysz sekcję „Poczta internetowa Rainloop”. Tam kliknij link, aby przejść do panelu administracyjnego Rainloop. Domyślny użytkownik/hasło to admin/12345. Ta wersja jest oparta na Rainloop 1.14.0 (2020-01).",

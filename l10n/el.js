@@ -3,9 +3,8 @@ OC.L10N.register(
     {
     "Email" : "Ηλ.Ταχυδρομείο",
     "Error" : "Σφάλμα",
-    "Invalid Argument(s)" : "Εσφαλμένο όρισμα(τα)",
-    "Saved successfully" : "Επιτυχής αποθήκευση",
     "Invalid argument(s)" : "Εσφαλμένο όρισμα(τα)",
+    "Saved successfully" : "Επιτυχής αποθήκευση",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "Ηλ.Ταχυδρομείο RainLoop",
     "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Απλή, σύγχρονη και γρήγορη εφαρμογή email μέσω διαδικτύου. Αφού την ενεργοποιήσετε στο Nextcloud, μεταβείτε στον πίνακα διαχείρισης, \"Επιπρόσθετες ρυθμίσεις\" και θα δείτε την ενότητα \"Ηλ.Ταχυδρομείο Rainloop\". Εκεί, κάντε κλικ στον σύνδεσμο για να μεταβείτε στον πίνακα διαχείρισης. Ο προεπιλεγμένος χρήστης / κωδικός πρόσβασης είναι admin / 12345. Αυτή η έκδοση βασίζεται στο Rainloop 1.14.0 (2020-01).",

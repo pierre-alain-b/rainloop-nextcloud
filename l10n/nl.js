@@ -3,9 +3,8 @@ OC.L10N.register(
     {
     "Email" : "Email",
     "Error" : "Fout",
-    "Invalid Argument(s)" : "Ongeldig(e) Argument(en)",
-    "Saved successfully" : "Succesvol opgeslagen",
     "Invalid argument(s)" : "Ongeldig(e) argument(en)",
+    "Saved successfully" : "Succesvol opgeslagen",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
     "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Eenvoudige, moderne en snelle webgebaseerde e-mailclient. Na het inschakelen in Nextcloud, ga je in het Nextcloud beheerscherm naar \"Additionele instellingen\" en je zult een \"Rainloop webmail\" sectie zien. Klik dan op de link om naar het Rainloop-beheerdscherm te gaan. De standaard gebruikersnasam / wachtwoord is admin / 12345. Deze versie is gebaseerd op Rainloop 1.14.0 (2020-01).",
