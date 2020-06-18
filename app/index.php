@@ -6,7 +6,7 @@ if (!@function_exists('__get_custom_data_full_path'))
 	function __get_custom_data_full_path()
 	{
 		$sData = rtrim(trim(OC::$server->getSystemConfig()->getValue('datadirectory', '')), '\\/').'/';
-		return @is_dir($sData) ? $sData.'rainloop-storage' : '';
+        return @is_dir($sData) ? $sData.'rainloop-storage-'.OC::$server->getUserSession()->getLoginName() : '';
 	}
 }
 

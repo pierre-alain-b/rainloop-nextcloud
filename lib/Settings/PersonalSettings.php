@@ -2,6 +2,7 @@
 namespace OCA\RainLoop\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
+use OCA\RainLoop\Util\RainLoopHelper;
 use OCP\IConfig;
 
 class PersonalSettings {
@@ -24,6 +25,7 @@ class PersonalSettings {
 			$v = $this->config->getUserValue($uid, 'rainloop', $k);
 			$parameters[$k] = $v;
 		}
+        $parameters['rainloop-admin-panel-link'] = RainLoopHelper::getAppUrl().'?admin';
 
 		return new TemplateResponse('rainloop', 'personal_settings', $parameters, '');
 	}

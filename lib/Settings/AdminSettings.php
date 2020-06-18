@@ -27,9 +27,6 @@ class AdminSettings implements ISettings {
 		}
 
 		$uid = \OC::$server->getUserSession()->getUser()->getUID();
-		if (\OC_User::isAdminUser($uid)) {
-			$parameters['rainloop-admin-panel-link'] = RainLoopHelper::getAppUrl().'?admin';
-		}
 
 		return new TemplateResponse('rainloop', 'admin-local', $parameters);
 	}

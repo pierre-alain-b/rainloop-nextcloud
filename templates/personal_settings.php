@@ -27,6 +27,11 @@ $links = [
 				<input type="button" id="rainloop-save-button" name="rainloop-save-button" value="<?php echo($l->t('Save')); ?>" />
 				&nbsp;&nbsp;<span class="rainloop-result-desc"></span>
 			</p>
+			<p>
+				<a href="<?php echo $_['rainloop-admin-panel-link'] ?>" target="_blank" style="text-decoration: underline">
+					<?php echo($l->t('Go to RainLoop Webmail admin panel')); ?>
+				</a>
+			</p>
 		</fieldset>
 	</form>
 </div>

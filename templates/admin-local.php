@@ -8,14 +8,6 @@
 		<fieldset class="personalblock">
 			<h2><?php echo($l->t('RainLoop Webmail')); ?></h2>
 			<br />
-			<?php if ($_['rainloop-admin-panel-link']): ?>
-			<p>
-				<a href="<?php echo $_['rainloop-admin-panel-link'] ?>" target="_blank" style="text-decoration: underline">
-					<?php echo($l->t('Go to RainLoop Webmail admin panel')); ?>
-				</a>
-			</p>
-			<br />
-			<?php endif; ?>
 			<p>
 				<div style="display: flex;">
 					<input type="radio" id="rainloop-noautologin" name="rainloop-autologin" value="0" <?php if (!$_['rainloop-autologin']&&!$_['rainloop-autologin-with-email']): ?>checked="checked"<?php endif; ?> />
