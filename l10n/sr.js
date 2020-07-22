@@ -3,6 +3,10 @@ OC.L10N.register(
     {
     "Email" : "Е-пошта",
     "Error" : "Грешка",
+    "Invalid argument(s)" : "Неисправни аргумент(и)",
+    "Saved successfully" : "Успешно сачувано",
+    "RainLoop" : "RainLoop",
+    "RainLoop Webmail" : "RainLoop веб пошта",
     "Save" : "Сачувај",
     "Password" : "Лозинка"
 },
