@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Email" : "Helbide elektronikoa",
     "Error" : "Errorea",
+    "Invalid argument(s)" : "Argumentu baliogabea(k)",
     "Saved successfully" : "Ondo gorde da",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
