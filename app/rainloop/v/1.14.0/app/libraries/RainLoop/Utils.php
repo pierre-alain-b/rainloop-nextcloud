@@ -577,9 +577,18 @@ class Utils
 				}
 			}
 		}
+		/*Now trying to detect the apps folder to give the right URL for assets */
+		$re = '/\/([a-zA-Z0-9-_]*)\/rainloop\/app\//m';
+		$str = __FILE__;
+		preg_match($re, $str, $matches);
 
-		return $sAppPath;
+		if ($matches[1] == "apps") {
+			return $sAppPath;
+		} else {
+			return str_replace("/apps/rainloop/app", "/".$matches[1]."/rainloop/app", $sAppPath);
+		}
 	}
+	
 	/**
 	 * @return string
 	 */
