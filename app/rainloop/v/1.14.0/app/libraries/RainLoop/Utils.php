@@ -578,7 +578,7 @@ class Utils
 			}
 		}
 		/*Now trying to detect the apps folder to give the right URL for assets */
-		$re = '/\/([a-zA-Z0-9-_]*)\/rainloop\/app\//m';
+		$re = '/\/([a-zA-Z0-9-_\.]*)\/rainloop\/app\//m';
 		$str = __FILE__;
 		preg_match($re, $str, $matches);
 
