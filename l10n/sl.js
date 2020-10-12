@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Email" : "Elektronski naslov",
     "Error" : "Napaka",
+    "Invalid argument(s)" : "Neveljavni argumenti",
+    "Saved successfully" : "Uspešno shranjeno",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "Spletna pošta RainLoop",
     "Save" : "Shrani",
