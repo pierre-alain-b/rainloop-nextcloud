@@ -7,6 +7,7 @@ OC.L10N.register(
     "Saved successfully" : "Uspešno shranjeno",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "Spletna pošta RainLoop",
+    "Go to RainLoop Webmail admin panel" : "Skoči v skrbniško okno spletne pošte RainLoop",
     "Save" : "Shrani",
     "RainLoop Webmail is not configured yet." : "Program RainLoop še ni nastavljen.",
     "may have some" : "nekatere pomembne",
