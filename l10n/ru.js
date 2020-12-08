@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Email" : "Адрес эл. почты",
     "Error" : "Ошибка",
+    "Invalid argument(s)" : "Неверные аргументы",
+    "Saved successfully" : "Сохранено успешно",
     "Save" : "Сохранить",
     "Password" : "Пароль"
 },
