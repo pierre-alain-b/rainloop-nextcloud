@@ -23,7 +23,7 @@ class RainLoopHelper {
 
 	public function registerHooks() {
 		$this->userSession->listen('\OC\User', 'postLogin', function($user, $loginName, $password, $isTokenLogin) {
-        	$this->login($user, $loginName, $password, $isTokenLogin, $this->config, $this->session);
+			$this->login($user, $loginName, $password, $isTokenLogin, $this->config, $this->session);
 		});
 
 		$this->userSession->listen('\OC\User', 'logout', function() {
