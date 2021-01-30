@@ -16,7 +16,7 @@ OC.L10N.register(
     "RainLoop Webmail is not configured yet." : "Program RainLoop še ni nastavljen.",
     "may have some" : "nekatere pomembne",
     "security considerations" : "varnostne omejitve",
-    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Vpišite elektronski naslov in geslo za samodejno vpisovanje v RainLoop. <b>Upoštevajte</b>, da ta zmožnost %s %s.",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Vpišite elektronski naslov in geslo za samodejno vpisovanje v RainLoop. <b>Upoštevajte</b>, da ima ta zmožnost %s %s.",
     "Password" : "Geslo"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");
