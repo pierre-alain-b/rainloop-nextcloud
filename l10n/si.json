@@ -1,0 +1,6 @@
+{ "translations": {
+    "Error" : "දෝෂය",
+    "Save" : "සුරකින්න",
+    "Password" : "මුර පදය"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
