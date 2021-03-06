@@ -22,7 +22,7 @@
 	<dependencies>
     <php min-version="5.4" />
 		<owncloud min-version="6" max-version="9.2" />
-		<nextcloud min-version="19" max-version="22" />
+		<nextcloud min-version="20" max-version="22" />
   </dependencies>
 	<settings>
 		<admin>OCA\RainLoop\Settings\AdminSettings</admin>
