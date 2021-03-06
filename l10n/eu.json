@@ -12,6 +12,9 @@
     "Attempt to automatically login users with their Nextcloud email and password, or user-defined credentials, if set." : "Ezarri saiakera erabiltzaileek saio-hasiera automatikoa egiteko Nextcloud e-posta eta pasahitzarekin, edo erabiltzaileek definitutako kredentzialekin, zehaztuz gero.",
     "Save" : "Gorde",
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail ez dago konfiguratuta oraindik.",
+    "may have some" : "batzuk izan ditzake",
+    "security considerations" : "segurtasun kontuak",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Saioa automatikoki hasteko sartu helbide elektronikoa eta pasahitza RainLoop-en.<b>Kontuan izan</b>ezaugarri hori dela%s%s.",
     "Password" : "Pasahitza"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
