@@ -7,7 +7,6 @@ OC.L10N.register(
     "Saved successfully" : "Uspješno spremljeno",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
-    "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01)." : "Jednostavan, suvremen i brz web-klijent za upravljanje e-poštom. Nakon što ga omogućite u Nextcloudu, otvorite Nextcloudovu administracijsku ploču, „Dodatne postavke” i vidjet ćete odjeljak „Rainloop webmail”. Ondje kliknite na poveznicu koja otvara administracijsku ploču aplikacije Rainloop. Zadano korisničko ime/zaporka su admin/12345. Ova inačica temelji se na aplikaciji Rainloop 1.14.0 (2020-01).",
     "Go to RainLoop Webmail admin panel" : "Idi na administracijsku ploču aplikacije RainLoop Webmail",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "Korisnici će se ručno prijavljivati ili definirati vjerodajnice za automatsku prijavu u svojim osobnim postavkama.",
     "Attempt to automatically login users with their Nextcloud username and password, or user-defined credentials, if set." : "Pokušajte automatski prijaviti korisnike s njihovim Nextcloudovim korisničkim imenom i zaporkom ili korisničkim vjerodajnicama, ako postoje.",
