@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Email" : "Email",
     "Error" : "Erreur",
-    "Invalid argument(s)" : "Argument(s) non valide",
+    "Invalid argument(s)" : "Argument(s) non valides",
     "Saved successfully" : "Enregistré avec succès",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "Webmail RainLoop",
