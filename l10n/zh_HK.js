@@ -16,7 +16,7 @@ OC.L10N.register(
     "RainLoop Webmail is not configured yet." : "RainLoop Webmail尚未配置。",
     "may have some" : "可能有一些",
     "security considerations" : "安全考慮",
-    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "輸入電子郵件和密碼以自動登入到RainLoop。 <b>請注意</b>此功能%s%s。",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "輸入電子郵件和密碼以自動登入到RainLoop。<b>請注意</b>此功能%s%s。",
     "Password" : "密碼"
 },
 "nplurals=1; plural=0;");
