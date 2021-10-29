@@ -1,7 +1,7 @@
 OC.L10N.register(
     "rainloop",
     {
-    "Email" : "Адрес эл. почты",
+    "Email" : "Email",
     "Error" : "Ошибка",
     "Invalid argument(s)" : "Неверные аргументы",
     "Saved successfully" : "Сохранено успешно",
