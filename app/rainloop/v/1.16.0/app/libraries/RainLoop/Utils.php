@@ -562,10 +562,10 @@ class Utils
 		$sAppPath = '';
 		if (\RainLoop\Utils::IsOwnCloud())
 		{
-			if (\class_exists('OC_App'))
-			{
-				$sAppPath = \rtrim(\trim(\OC_App::getAppWebPath('rainloop')), '\\/').'/app/';
-			}
+			$sAppPath = \OC::$server->getURLGenerator()->linkToRoute('rainloop.page.appGet');
+			// TODO: Fix this ugly hack. Is there a "modern" way to return
+			// a URL that doesn't include index.php, which breaks things?
+			$sAppPath = preg_replace('/index\.php\//', '', $sAppPath);
 
 			if (empty($sAppPath))
 			{
@@ -577,9 +577,18 @@ class Utils
 				}
 			}
 		}
+		/*Now trying to detect the apps folder to give the right URL for assets */
+		$re = '/\/([a-zA-Z0-9-_\.]*)\/rainloop\/app\//m';
+		$str = __FILE__;
+		preg_match($re, $str, $matches);
 
-		return $sAppPath;
+		if ($matches[1] == "apps") {
+			return $sAppPath;
+		} else {
+			return str_replace("/apps/rainloop/app", "/".$matches[1]."/rainloop/app", $sAppPath);
+		}
 	}
+
 	/**
 	 * @return string
 	 */
