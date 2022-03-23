@@ -7,7 +7,7 @@ OC.L10N.register(
     "Saved successfully" : "已成功保存",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop 网页邮箱",
-    "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.15.0 (2021-01)." : "简洁，现代并快速的电子邮件网页客户端。在Nextcloud里启用后，在Nextcloud管理面板的“额外的设置”里，您将看到“Rainloop webmail”部分。点击链接进入Rainloop网页邮箱。默认的用户名/密码是admin/12345。此版本基于Rainloop 1.15.0 (2021-01)。",
+    "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05)." : "简洁，现代并快速的电子邮件网页客户端。在Nextcloud里启用后，在Nextcloud管理面板的“额外的设置”里，您将看到“Rainloop webmail”部分。点击链接进入Rainloop网页邮箱。默认的用户名/密码是admin/12345。此版本基于Rainloop 1.16.0 (2021-05)。",
     "Go to RainLoop Webmail admin panel" : "转到 RainLoop 网页邮箱管理面板",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "用户将手动登录，或在其个人设置中定义凭据以自动登录。",
     "Attempt to automatically login users with their Nextcloud username and password, or user-defined credentials, if set." : "尝试使用其 Nextcloud 用户名和密码或用户定义的凭据（如果设置）自动登录。",

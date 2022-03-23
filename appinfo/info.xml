@@ -3,7 +3,7 @@
 	<id>rainloop</id>
 	<name>RainLoop</name>
 	<summary>RainLoop Webmail</summary>
-	<description>Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.15.0 (2021-01).</description>
+	<description>Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05).</description>
 	<version>7.1.3</version>
 	<licence>agpl</licence>
 	<author>RainLoop Team, Nextgen-Networks, Tab Fitts, Nathan Kinkade, Pierre-Alain Bandinelli</author>
