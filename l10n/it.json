@@ -5,7 +5,6 @@
     "Saved successfully" : "Salvato correttamente",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "Webmail RainLoop",
-    "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05)." : "Client email basato su tecnologie web semplice, moderno e veloce. Dopo l'attivazione in Nextcloud, vai nel pannello di amministrazione di Nextcloud, \"Impostazioni aggiuntive\" e vedrai una sezione \"Webmail Rainloop\". Lì, fai clic sul collegamento per andare al pannello di amministrazione di Rainloop. L'utente/password predefinito è admin/12345. Questa versione è basata su Rainloop 1.16.0 (2021-05).",
     "Go to RainLoop Webmail admin panel" : "Vai al pannello di amministrazione della webmail RainLoop",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "Gli utenti accederanno manualmente, o definiranno le credenziali nelle impostazioni personali per gli accessi automatici.",
     "Attempt to automatically login users with their Nextcloud username and password, or user-defined credentials, if set." : "Tenta l'accesso automatico degli utenti tramite nome utente e password di Nextcloud, o con le credenziali definite dall'utente, se disponibili.",

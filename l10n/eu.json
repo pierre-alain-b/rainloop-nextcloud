@@ -5,7 +5,6 @@
     "Saved successfully" : "Ondo gorde da",
     "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
-    "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05)." : "Webean oinarritutako posta elektronikoko bezero sinple, moderno eta azkarra. Nextcloud-en gaitu ondoren, joan Nextcloud administrazio panelera, \"Ezarpen osagarriak\" eta \"Rainloop web posta\" atala ikusiko duzu. Bertan, egin klik estekan Rainloop administratzaile panelera joateko. Erabiltzaile / pasahitz lehenetsia admin / 12345 da. Bertsio hau Rainloop 1.16.0 (2021-05) -(e)an oinarrituta dago.",
     "Go to RainLoop Webmail admin panel" : "Joan RainLoop Webmailen administrazio panelera",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "Erabiltzaileek eskuz hasiko dute saioa, edo bestela beraien ezarpen pertsonaletan kredentzialak zehaztu ditzakete saio-hasiera automatikorako.",
     "Attempt to automatically login users with their Nextcloud username and password, or user-defined credentials, if set." : "Ezarri saiakera erabiltzaileek saio-hasiera automatikoa egiteko Nextcloud erabiltzaile-izena eta pasahitzarekin, edo erabiltzaileek definitutako kredentzialekin, zehaztuz gero.",
