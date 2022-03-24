@@ -74,6 +74,7 @@ class PageController extends Controller {
 		if (isset($_GET['OwnCloudAuth'])) {
 			$sEmail = '';
 			$sEncodedPassword = '';
+			$sPasswordSalt = '';
 
 			$sUser = \OC::$server->getUserSession()->getUser()->getUID();
 
