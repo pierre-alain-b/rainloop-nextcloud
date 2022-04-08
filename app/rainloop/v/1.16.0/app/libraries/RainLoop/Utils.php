@@ -540,7 +540,7 @@ class Utils
 	 */
 	public static function IsOwnCloudLoggedIn()
 	{
-		return self::IsOwnCloud() && \class_exists('OCP\User') && \OCP\User::isLoggedIn();
+		return self::IsOwnCloud() && \OC::$server->getUserSession()->isLoggedIn();
 	}
 
 	/**
