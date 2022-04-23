@@ -239,7 +239,9 @@ class HtmlUtils
 				$oWrapHtml->setAttribute($sKey, $sValue);
 			}
 
-			$oWrapDom = $oDom->createElement('div', '___xxx___');
+			#$oWrapDom = $oDom->createElement('div', '___xxx___');
+			$rand_str = base64_encode(random_bytes(32));
++     $oWrapDom = $oDom->createElement('div', $rand_str);
 			$oWrapDom->setAttribute('data-x-div-type', 'body');
 			foreach ($aBodylAttrs as $sKey => $sValue)
 			{
@@ -250,7 +252,8 @@ class HtmlUtils
 
 			$sWrp = $oDom->saveHTML($oWrapHtml);
 
-			$sResult = \str_replace('___xxx___', $sResult, $sWrp);
+			#$sResult = \str_replace('___xxx___', $sResult, $sWrp);
+			$sResult = \str_replace($rand_str, $sResult, $sWrp);
 		}
 
 		$sResult = \str_replace(\MailSo\Base\HtmlUtils::$KOS, ':', $sResult);
