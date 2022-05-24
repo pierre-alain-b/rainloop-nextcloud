@@ -15,5 +15,5 @@
     "security considerations" : "consideraciones de seguridad",
     "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Escriba un email y contraseña para auto registro en RainLoop. Por favor, observe note</b> que esta característica %s %s.",
     "Password" : "Contraseña"
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
+},"pluralForm" :"nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
 }

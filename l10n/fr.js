@@ -18,4 +18,4 @@ OC.L10N.register(
     "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Saisissez un courriel et un mot de passe pour se connecter automatiquement à RainLoop. <b>A noter que </b> cette fonctionnalité %s %s.",
     "Password" : "Mot de passe"
 },
-"nplurals=2; plural=(n > 1);");
+"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
