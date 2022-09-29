@@ -13,7 +13,7 @@
     "RainLoop Webmail is not configured yet." : "RainLoop n'est pas encore configuré.",
     "may have some" : "peut avoir",
     "security considerations" : "Motifs de sécurité",
-    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Saisissez un courriel et un mot de passe pour se connecter automatiquement à RainLoop. <b>A noter que </b> cette fonctionnalité %s %s.",
+    "Enter an email and password to auto-login to RainLoop. <b>Please note</b> that this feature %s %s." : "Saisissez un e-mail et un mot de passe pour se connecter automatiquement à RainLoop. <b>À noter que </b> cette fonctionnalité %s %s.",
     "Password" : "Mot de passe"
 },"pluralForm" :"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
 }
