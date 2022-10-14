@@ -1,5 +1,8 @@
 # rainloop-nextcloud
 
+
+## rainloop-nextcloud is to be deprecated (soon) in favor of snappymail!
+
 rainloop-nextcloud is a plugin for Nextcloud to use the Rainloop webmail (http://www.rainloop.net/). However the Rainloop webmail does not seem to be maintained anymore... SnappyMail (https://snappymail.eu/) is reasonably close and seems better supported. A project of plugin of SnappyMail for Nextcloud is being explored, see https://github.com/the-djmaze/snappymail/issues/96 for more details.
 
 ## Which branch for which version of Nextcloud?
