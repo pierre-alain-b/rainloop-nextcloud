@@ -4,7 +4,7 @@
 	<name>RainLoop (deprecated, consider Snappymail)</name>
 	<summary>RainLoop Webmail (deprecated, consider Snappymail)</summary>
 	<description>Rainloop is not maintained anymore. Consider a switch to Snappymail which is an actively-maintained fork of Rainloop. After enabling in Nextcloud, go to Nextcloud admin panel, "Additionnal settings" and you will see a "Rainloop webmail" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05).</description>
-	<version>7.2.5</version>
+	<version>7.2.6</version>
 	<licence>agpl</licence>
 	<author>RainLoop Team, Nextgen-Networks, Tab Fitts, Nathan Kinkade, Pierre-Alain Bandinelli</author>
   <namespace>RainLoop</namespace>
