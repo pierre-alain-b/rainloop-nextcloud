@@ -10,6 +10,5 @@
 
 $app = new OCA\RainLoop\AppInfo\Application();
 $app->registerNavigation();
-$app->registerPersonalSettings();
 $app->getContainer()->query('RainLoopHelper')->registerHooks();
 
