@@ -5,7 +5,6 @@ OC.L10N.register(
     "Error" : "שגיאה",
     "Invalid argument(s)" : "ארגומנטים שגויים",
     "Saved successfully" : "נשמר בהצלחה",
-    "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "דוא״ל דפדפן RainLoop",
     "Go to RainLoop Webmail admin panel" : "מעבר ללוח הניהול של הדוא״ל דרך הדפדפן RainLoop",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "משתמשים ייכנסו ידנית או יגדירו הרשאות גישה בהגדרות האישיות שלהם לכניסות באופן אוטומטי.",

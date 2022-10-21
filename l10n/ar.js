@@ -3,7 +3,6 @@ OC.L10N.register(
     {
     "Email" : "البريد الإلكترونى",
     "Error" : "خطأ",
-    "RainLoop" : "رين لوب",
     "RainLoop Webmail" : "رين لوب لبريد الويب",
     "Go to RainLoop Webmail admin panel" : "اذهب الى لوحة ادارة رين لوب لبريد الويب",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "المستخدمين س يدخلو يدويا، او تعريف شهادات في اعدادات حساباتهم الشخصية لتسجيل الدخول آليا.",

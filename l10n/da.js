@@ -5,7 +5,6 @@ OC.L10N.register(
     "Error" : "Fejl",
     "Invalid argument(s)" : "Ugyldige argument(er)",
     "Saved successfully" : "Gemt",
-    "RainLoop" : "RainLoop",
     "RainLoop Webmail" : "RainLoop Webmail",
     "Go to RainLoop Webmail admin panel" : "Gå til RainLoop Webmail admin panel",
     "Users will login manually, or define credentials in their personal settings for automatic logins." : "Brugere vil logge på manuelt eller definere legitimationsoplysninger i deres personlige indstillinger for automatiske logins.",
